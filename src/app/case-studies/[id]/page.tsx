@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { caseStudies } from "@/data/case-studies";
 import CaseStudyContent from "./case-study-content";
 
@@ -17,9 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const study = caseStudies.find((s) => s.id === id);
 
     if (!study) {
-        return {
-            title: "Case Study Not Found",
-        };
+        return { title: "Not Found" };
     }
 
     return {
@@ -31,6 +30,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-export default function CaseStudyPage() {
-    return <CaseStudyContent />;
+export default async function CaseStudyPage({ params }: Props) {
+    const { id } = await params;
+    const study = caseStudies.find((s) => s.id === id);
+
+    if (!study) {
+        notFound();
+    }
+
+    return <CaseStudyContent study={study} />;
 }

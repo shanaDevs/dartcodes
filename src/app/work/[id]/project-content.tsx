@@ -9,14 +9,17 @@ import { Ripple } from "m3-ripple";
 import { ArrowLeft, ExternalLink, Calendar, Code, Layers } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useParams, useRouter } from "next/navigation";
 import { projects } from "@/data/projects";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
-export default function ProjectContent() {
-  const params = useParams();
-  const router = useRouter();
+type Project = (typeof projects)[number];
+
+interface ProjectContentProps {
+  project: Project;
+}
+
+export default function ProjectContent({ project }: ProjectContentProps) {
   const { theme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -26,19 +29,8 @@ export default function ProjectContent() {
 
   const currentTheme = mounted ? (resolvedTheme || theme) : "dark";
 
-  // Derive project directly from params
-  const projectIndex = projects.findIndex((p) => p.id === params.id);
-  const project = projectIndex !== -1 ? projects[projectIndex] : undefined;
-  const nextProject = projectIndex !== -1 ? projects[(projectIndex + 1) % projects.length] : undefined;
-
-  // Redirect if not found
-  useEffect(() => {
-    if (!project && params.id) {
-      router.push("/work");
-    }
-  }, [project, params.id, router]);
-
-  if (!project) return <div className="min-h-screen bg-background" />;
+  const projectIndex = projects.findIndex((p) => p.id === project.id);
+  const nextProject = projects[(projectIndex + 1) % projects.length];
 
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-gold selection:text-black">

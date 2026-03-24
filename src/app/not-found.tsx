@@ -7,38 +7,33 @@ import { Footer } from "@/components/footer";
 import { Button } from "@heroui/react";
 import { Ripple } from "m3-ripple";
 
-export default function UnderConstructionPage() {
+export default function NotFound() {
   return (
     <div className="bg-background text-foreground min-h-screen">
       <Navbar />
 
       <section className="relative w-full min-h-screen flex items-center justify-center pt-28">
-        {/* Background image */}
         <Image
           src="/images/Under construction-bro.svg"
-          alt="Page under construction"
+          alt="Page not found"
           fill
           priority
           className="object-cover pb-16"
         />
 
-        {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background/85" />
 
-        {/* Content */}
         <div className="relative z-10 w-full max-w-4xl px-6 text-center space-y-6">
           <span className="inline-flex items-center rounded-full border border-gold/40 bg-gold/10 px-4 py-1 text-xs font-semibold tracking-[0.2em] uppercase text-gold">
-            Work in progress
+            404 not found
           </span>
 
           <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-            This page is{" "}
-            <span className="text-gradient-gold">under construction.</span>
+            This page could not be <span className="text-gradient-gold">found.</span>
           </h1>
 
           <p className="text-sm md:text-base text-foreground/60 max-w-2xl mx-auto">
-            We&apos;re crafting something special here. In the meantime, you can
-            explore our other pages or get in touch with our team.
+            The page might have moved, been removed, or the URL may be incorrect.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4">

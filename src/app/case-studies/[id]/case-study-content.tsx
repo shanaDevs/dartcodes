@@ -17,7 +17,6 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useParams, useRouter } from "next/navigation";
 import { caseStudies } from "@/data/case-studies";
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
@@ -103,9 +102,13 @@ const otherProjects = [
   },
 ];
 
-export default function CaseStudyContent() {
-  const params = useParams();
-  const router = useRouter();
+type CaseStudy = (typeof caseStudies)[number];
+
+interface CaseStudyContentProps {
+  study: CaseStudy;
+}
+
+export default function CaseStudyContent({ study }: CaseStudyContentProps) {
   const { theme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [activePhase, setActivePhase] = useState<string | null>(null);
@@ -119,8 +122,6 @@ export default function CaseStudyContent() {
   }, []);
 
   const currentTheme = mounted ? resolvedTheme || theme : "dark";
-
-  const study: any = caseStudies.find((s) => s.id == params.id);
 
   const steps = [
     "Custom Software Development: Tailored solutions designed to solve specific business challenges.",
@@ -180,14 +181,6 @@ export default function CaseStudyContent() {
       alt: "Mobile responsive view",
     },
   ];
-
-  useEffect(() => {
-    if (!study && params.id) {
-      router.push("/case-studies");
-    }
-  }, [study, params.id, router]);
-
-  if (!study) return <div className="min-h-screen bg-background" />;
 
   return (
     <div>
