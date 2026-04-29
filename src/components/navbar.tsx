@@ -115,7 +115,7 @@ export function Navbar() {
                 className="bg-gold text-white font-bold hover:bg-gold/90 rounded-full h-11 px-6 shadow-[0_0_15px_rgba(212,175,55,0.2)] hover:shadow-[0_0_25px_rgba(212,175,55,0.4)] transition-all"
               >
                 <Ripple />
-                Book a Call
+                Book a Appointment
               </Button>
             </Link>
           </nav>
@@ -253,7 +253,7 @@ export function Navbar() {
                     className="bg-gold text-white font-bold text-xl h-14 px-10 rounded-full"
                   >
                     <Ripple />
-                    Book a Call
+                    Book a Appointment
                   </Button>
                 </Link>
               </motion.div>

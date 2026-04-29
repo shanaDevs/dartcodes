@@ -46,10 +46,10 @@ export default function CaseStudiesContent() {
           <div className="absolute inset-0 z-0">
             {/* Soft gradient background instead of a specific image to match the premium tone */}
             <div
-              className={`absolute top-1/4 left-1/4 w-[500px] h-[500px] ${currentTheme === "light" ? "bg-gold/10" : "bg-gold/5"} rounded-full blur-[150px] -z-10`}
+              className={`absolute top-1/4 left-1/4 w-125 h-125 ${currentTheme === "light" ? "bg-gold/10" : "bg-gold/5"} rounded-full blur-[150px] -z-10`}
             />
             <div
-              className={`absolute bottom-1/4 right-1/4 w-[400px] h-[400px] ${currentTheme === "light" ? "bg-purple-500/5" : "bg-purple-900/10"} rounded-full blur-[120px] -z-10`}
+              className={`absolute bottom-1/4 right-1/4 w-100 h-100 ${currentTheme === "light" ? "bg-purple-500/5" : "bg-purple-900/10"} rounded-full blur-[120px] -z-10`}
             />
             <div
               className={`absolute inset-0 ${currentTheme === "light" ? "bg-linear-to-b from-background/80 via-background/50 to-background" : "bg-linear-to-b from-black/80 via-black/50 to-background"}`}
@@ -63,7 +63,7 @@ export default function CaseStudiesContent() {
               className="flex flex-col items-center md:items-start"
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="h-[2px] w-8 bg-linear-to-r from-gold to-transparent hidden md:block" />
+                <div className="h-0.5 w-8 bg-linear-to-r from-gold to-transparent hidden md:block" />
                 <span className="text-gold font-medium tracking-widest uppercase text-sm px-4 py-1.5 rounded-full border border-gold/10 bg-gold/5">
                   Real Results
                 </span>
@@ -109,18 +109,26 @@ export default function CaseStudiesContent() {
         {featuredCaseStudy && (
           <section className="lg:py-20 lg:px-30 py-10 px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-              <div className="max-w-auto overflow-hidden rounded-3xl bg-[#F8EFD4] shadow-lg border border-[#EDC988]">
+              <div
+                className={`max-w-auto overflow-hidden rounded-3xl backdrop-blur-xl ${currentTheme === "light" ? "border border-[#EDC988] bg-[#F8EFD4] shadow-lg" : "border border-gold/25 bg-background/85 shadow-[0_12px_35px_rgba(0,0,0,0.28)] dark:bg-zinc-950/90 dark:border-gold/30 dark:shadow-[0_12px_35px_rgba(0,0,0,0.55)]"}`}
+              >
                 <div className="flex flex-col md:flex-row">
                   <div className="flex-1 p-8 pb-4">
-                    <span className="inline-block rounded-full bg-[#EDC988] px-4 py-1 text-xs font-bold uppercase tracking-wider text-black">
+                    <span
+                      className={`inline-block rounded-full px-4 py-1 text-xs font-bold uppercase tracking-wider ${currentTheme === "light" ? "bg-[#EDC988] text-black" : "bg-gold text-black dark:bg-gold dark:text-black"}`}
+                    >
                       {featuredCaseStudy.category}
                     </span>
 
-                    <h2 className="mt-4 text-3xl font-extrabold text-[#1e293b]">
+                    <h2
+                      className={`mt-4 text-3xl font-extrabold ${currentTheme === "light" ? "text-[#1e293b]" : "text-foreground"}`}
+                    >
                       {featuredCaseStudy.title}
                     </h2>
 
-                    <p className="mt-4 text-slate-600 leading-relaxed">
+                    <p
+                      className={`mt-4 leading-relaxed ${currentTheme === "light" ? "text-slate-600" : "text-foreground/65"}`}
+                    >
                       {featuredCaseStudy.description}
                     </p>
 
@@ -129,7 +137,7 @@ export default function CaseStudiesContent() {
                         {featuredCaseStudy.tags.map((tag: string) => (
                           <span
                             key={tag}
-                            className="px-3 py-1 rounded-full bg-[#DBCC8F] text-xs font-medium text-[#1e293b]"
+                            className={`px-3 py-1 rounded-full text-xs font-medium border ${currentTheme === "light" ? "bg-[#DBCC8F] text-[#1e293b] border-[#EDC988]" : "bg-foreground/5 text-foreground/70 border-border/60 dark:bg-foreground/10 dark:text-foreground/75"}`}
                           >
                             {tag}
                           </span>
@@ -138,7 +146,9 @@ export default function CaseStudiesContent() {
                     )}
 
                     <Link href={featuredCaseStudy.link}>
-                      <button className="mt-8 flex items-center gap-2 rounded-2xl bg-[#EDC988] px-8 py-4 text-black font-semibold text-sm transition-all hover:bg-[#DBCC8F] active:scale-95 shadow-lg shadow-[0_10px_30px_rgba(0,0,0,0.15)] lg:whitespace-nowrap">
+                      <button
+                        className={`mt-8 flex items-center gap-2 rounded-2xl px-8 py-4 text-sm font-semibold transition-all active:scale-95 lg:whitespace-nowrap ${currentTheme === "light" ? "bg-[#EDC988] text-black hover:bg-[#DBCC8F] shadow-[0_10px_30px_rgba(0,0,0,0.15)]" : "bg-gold text-black hover:bg-gold/90 shadow-[0_10px_30px_rgba(0,0,0,0.35)]"}`}
+                      >
                         View Case Study
                         <ArrowRight size={20} />
                       </button>
@@ -146,7 +156,9 @@ export default function CaseStudiesContent() {
                   </div>
 
                   {/* Right Side Image/Logo */}
-                  <div className="flex-1 bg-[#F8EFD4] flex items-center justify-center rounded-bl-[40px] md:rounded-bl-[60px] overflow-hidden">
+                  <div
+                    className={`flex-1 flex items-center justify-center rounded-bl-[40px] md:rounded-bl-[60px] overflow-hidden ${currentTheme === "light" ? "bg-[#F8EFD4]" : "bg-foreground/5 dark:bg-zinc-900/70"}`}
+                  >
                     <Image
                       src={featuredCaseStudy.image}
                       alt={featuredCaseStudy.title}
@@ -158,19 +170,27 @@ export default function CaseStudiesContent() {
                 </div>
 
                 {/* Bottom Stats Section */}
-                <div className="flex border-t border-[#EDC988] bg-[#F8EFD4]/80">
+                <div
+                  className={`flex ${currentTheme === "light" ? "border-t border-[#EDC988] bg-[#F8EFD4]/80" : "border-t border-border/70 bg-foreground/3 dark:border-gold/15 dark:bg-white/5"}`}
+                >
                   <div className="flex-1 p-8 text-center">
-                    <div className="text-4xl font-bold text-[#EDC988]">3x</div>
-                    <div className="mt-1 text-xs font-bold uppercase tracking-widest text-slate-600">
+                    <div className="text-4xl font-bold text-gold">3x</div>
+                    <div
+                      className={`mt-1 text-xs font-bold uppercase tracking-widest ${currentTheme === "light" ? "text-slate-600" : "text-foreground/60"}`}
+                    >
                       Increase in Online Quote Requests
                     </div>
                   </div>
 
-                  <div className="w-[1px] bg-[#DBCC8F] my-8"></div>
+                  <div
+                    className={`w-px my-8 ${currentTheme === "light" ? "bg-[#DBCC8F]" : "bg-border/70 dark:bg-gold/15"}`}
+                  ></div>
 
                   <div className="flex-1 p-8 text-center">
-                    <div className="text-4xl font-bold text-[#EDC988]">4x</div>
-                    <div className="mt-1 text-xs font-bold uppercase tracking-widest text-slate-600">
+                    <div className="text-4xl font-bold text-gold">4x</div>
+                    <div
+                      className={`mt-1 text-xs font-bold uppercase tracking-widest ${currentTheme === "light" ? "text-slate-600" : "text-foreground/60"}`}
+                    >
                       Faster Page Load Times
                     </div>
                   </div>

@@ -27,7 +27,7 @@ export default function WorkContent() {
     setMounted(true);
   }, []);
 
-  const currentTheme = mounted ? (resolvedTheme || theme) : "dark";
+  const currentTheme = mounted ? resolvedTheme || theme : "dark";
 
   const filteredProjects =
     selectedCategory === "All"
@@ -46,10 +46,12 @@ export default function WorkContent() {
               src="/assets/imgs/heros/hero_work.jpeg"
               alt="Project portfolio showcase"
               fill
-              className={`object-cover ${currentTheme === "light" ? "opacity-20" : "opacity-30"}`}
+              className={`object-cover ${currentTheme === "light" ? "opacity-50" : "opacity-60"}`}
               priority
             />
-            <div className={`absolute inset-0 ${currentTheme === "light" ? "bg-linear-to-b from-background/90 via-background/70 to-background" : "bg-linear-to-b from-black/80 via-black/50 to-[#0a0a0a]"}`} />
+            <div
+              className={`absolute inset-0 ${currentTheme === "light" ? "bg-linear-to-b from-background/90 via-background/70 to-background" : "bg-linear-to-b from-black/80 via-black/50 to-[#0a0a0a]"}`}
+            />
           </div>
           <div className="container mx-auto max-w-6xl relative z-10">
             <motion.div
@@ -80,10 +82,11 @@ export default function WorkContent() {
                 <button
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 border ${selectedCategory === cat
-                    ? "bg-gold text-black border-gold"
-                    : `bg-foreground/5 text-foreground/60 border-foreground/10 hover:border-gold/30 hover:text-foreground`
-                    }`}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 border ${
+                    selectedCategory === cat
+                      ? "bg-gold text-black border-gold"
+                      : `bg-foreground/5 text-foreground/60 border-foreground/10 hover:border-gold/30 hover:text-foreground`
+                  }`}
                 >
                   {cat}
                 </button>
@@ -113,7 +116,7 @@ export default function WorkContent() {
                   <div className="relative h-64 overflow-hidden">
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors z-10" />
                     <Image
-                      src={project.image}
+                      src={project.cardImage ?? project.image}
                       alt={project.title}
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -176,8 +179,8 @@ export default function WorkContent() {
               Have a Project in Mind?
             </h2>
             <p className="text-black/70 text-xl mb-8 max-w-2xl mx-auto">
-              We&apos;d love to help you bring your vision to life. Let&apos;s discuss how
-              we can work together.
+              We&apos;d love to help you bring your vision to life. Let&apos;s
+              discuss how we can work together.
             </p>
             <Link href="/contact">
               <Button className="bg-black text-white font-bold h-14 px-8 text-lg rounded-xl hover:bg-black/80">

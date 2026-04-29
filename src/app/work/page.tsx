@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { notFound } from "next/navigation";
 import WorkContent from "./work-content";
 
 export const metadata: Metadata = {
@@ -8,5 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default function WorkPage() {
+  // notFound();
   return <WorkContent />;
 }

@@ -25,15 +25,15 @@ export default function NotFound() {
 
         <div className="relative z-10 w-full max-w-4xl px-6 text-center space-y-6">
           <span className="inline-flex items-center rounded-full border border-gold/40 bg-gold/10 px-4 py-1 text-xs font-semibold tracking-[0.2em] uppercase text-gold">
-            404 not found
+            Work in progress
           </span>
 
           <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-            This page could not be <span className="text-gradient-gold">found.</span>
+            This page is <span className="text-gradient-gold">under construction.</span>
           </h1>
 
           <p className="text-sm md:text-base text-foreground/60 max-w-2xl mx-auto">
-            The page might have moved, been removed, or the URL may be incorrect.
+            We&apos;re crafting something special here. In the meantime, you can explore our other pages or get in touch with our team.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4">

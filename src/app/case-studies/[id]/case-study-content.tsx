@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { caseStudies } from "@/data/case-studies";
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
@@ -109,6 +110,7 @@ interface CaseStudyContentProps {
 }
 
 export default function CaseStudyContent({ study }: CaseStudyContentProps) {
+  const router = useRouter();
   const { theme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [activePhase, setActivePhase] = useState<string | null>(null);
@@ -170,16 +172,10 @@ export default function CaseStudyContent({ study }: CaseStudyContentProps) {
   ];
 
   const mockups = [
-    { src: "/images/services/salon/saloon5.png", alt: "Mobile app view" },
-    { src: "/images/services/salon/saloon6.png", alt: "Desktop website view" },
-    {
-      src: "/images/services/salon/saloon7.png",
-      alt: "Full website experience",
-    },
-    {
-      src: "/images/services/salon/saloon8.png",
-      alt: "Mobile responsive view",
-    },
+    { src: "/images/services/salon/project6.png", alt: "Mobile app view" },
+    { src: "/images/services/salon/project2.jpeg", alt: "Desktop website view" },
+    { src: "/images/services/salon/project1.jpeg", alt: "Full website experience" },
+    { src: "/images/services/salon/project4.jpeg", alt: "Mobile responsive view" },
   ];
 
   return (
@@ -219,33 +215,33 @@ export default function CaseStudyContent({ study }: CaseStudyContentProps) {
             </div>
 
             {/* Right: 2x2 image grid */}
-            <div className="grid grid-cols-2 grid-rows-2 gap-4">
-              <div className="relative w-full overflow-hidden rounded-2xl h-[80%]">
+            <div className="grid grid-cols-2 grid-rows-2 gap-2">
+              <div className="relative w-full overflow-hidden rounded-2xl h-[80%] p-3 box-border">
                 <img
                   src="/images/services/salon/image1.jpeg"
                   alt="Project detail 1"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-xl"
                 />
               </div>
-              <div className="relative w-full overflow-hidden rounded-2xl h-[80%]">
+              <div className="relative w-full overflow-hidden rounded-2xl h-[80%] p-3 box-border">
                 <img
                   src="/images/services/salon/image5.jpeg"
                   alt="Project detail 2"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-xl"
                 />
               </div>
-              <div className="relative w-full overflow-hidden rounded-2xl h-[80%] lg:-mt-20 -mt-10">
+              <div className="relative w-full overflow-hidden rounded-2xl h-[80%] lg:-mt-20 -mt-10 p-3 box-border">
                 <img
                   src="/images/services/salon/image3.jpeg"
                   alt="Project detail 3"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-xl"
                 />
               </div>
-              <div className="relative w-full overflow-hidden rounded-2xl h-[80%] lg:-mt-20 -mt-10">
+              <div className="relative w-full overflow-hidden rounded-2xl h-[80%] lg:-mt-20 -mt-10 p-3 box-border">
                 <img
                   src="/images/services/salon/image4.jpeg"
                   alt="Project detail 4"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-xl"
                 />
               </div>
             </div>
@@ -437,11 +433,11 @@ export default function CaseStudyContent({ study }: CaseStudyContentProps) {
                     className="group relative overflow-hidden rounded-[32px] bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/10 hover:-translate-y-2"
                   >
                     {/* Image Container */}
-                    <div className="relative aspect-[4/3] w-full">
+                    <div className="relative aspect-[4/3] w-full p-3 box-border">
                       <img
                         src={img.src}
                         alt={img.alt}
-                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        className="h-full w-full object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110"
                       />
 
                       {/* Subtle Gradient Overlay on Hover */}
@@ -759,7 +755,9 @@ export default function CaseStudyContent({ study }: CaseStudyContentProps) {
 
                 {/* Action Button */}
                 <Button
+                  type="button"
                   size="lg"
+                  onClick={() => router.push("/contact")}
                   className="bg-white hover:bg-zinc-200 text-zinc-950 font-bold py-8 px-10 rounded-full text-xl group transition-all duration-300 hover:scale-105"
                 >
                   Get in touch
