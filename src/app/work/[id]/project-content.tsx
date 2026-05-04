@@ -18,34 +18,25 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { type Project, type ProjectSection } from "@/data/projects";
 
-type Project = {
-  id: string;
-  title: string;
-  category: string;
-  image: string;
-  cardImage?: string;
-  galleryImage?: string;
-  description: string;
-  tags: string[];
-  link: string;
-  longDescription?: string;
-  challenge?: string;
-  solution?: string;
-  sections?: Array<{
-    feature: string;
-    description: string;
-    image: string;
-    fit?: "cover" | "contain";
-  }>;
-};
-
-type ProjectSection = {
-  feature: string;
-  description: string;
-  image: string;
-  fit?: "cover" | "contain";
-};
+function sectionMediaUrls(section: ProjectSection): string[] {
+  if (section.images && section.images.length > 0) {
+    return [...section.images];
+  }
+  if (section.image) {
+    return [section.image];
+  }
+  return [];
+}
 
 interface ProjectContentProps {
   project: Project;
@@ -154,9 +145,29 @@ export default function ProjectContent({ project }: ProjectContentProps) {
           </div>
         </div>
 
-        <Section className="pb-8" containerClassName="py-0">
+        <Section containerClassName="py-0">
+          <div className="text-center mb-4">
+            <h3 className="text-lg md:text-2xl font-semibold text-gold">
+              Main Features
+            </h3>
+          </div>
+          <ul className="flex flex-wrap items-center justify-center gap-3">
+            {contentSections.map((item, itemIndex) => (
+              <li
+                key={`${project.id}-feature-badge-${item.feature}-${itemIndex}`}
+                className="rounded-full border border-gold/60 bg-gold/15 px-4 py-1.5 text-sm md:text-base font-medium text-gold"
+              >
+                {item.feature}
+              </li>
+            ))}
+          </ul>
+        </Section>
+
+        <Section containerClassName="py-0">
           <div className="space-y-8 md:space-y-12">
             {contentSections.map((section, index) => {
+              const mediaUrls = sectionMediaUrls(section);
+              const useCarousel = mediaUrls.length > 1;
               const imageFirst = index % 2 === 0;
               const descriptionLines = section.description
                 .split("\n")
@@ -182,26 +193,66 @@ export default function ProjectContent({ project }: ProjectContentProps) {
                   }}
                   className="grid gap-6 lg:gap-8 lg:grid-cols-2 items-center"
                 >
-                  <div
-                    className={imageFirst ? "order-1" : "order-1 lg:order-2"}
-                  >
-                    <div className="relative min-h-96 md:min-h-110 rounded-[2rem] overflow-hidden border border-border/70 bg-foreground/2 shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
-                      <Image
-                        src={section.image}
-                        alt={`${section.feature} image`}
-                        fill
-                        sizes="(max-width: 1024px) 100vw, 50vw"
-                        className={`${section.fit === "contain" ? "object-contain p-4 md:p-6" : "object-cover"}`}
-                      />
-                      <div className="absolute inset-0 bg-linear-to-tr from-background/35 via-transparent to-transparent" />
+                  {mediaUrls.length > 0 && (
+                    <div
+                      className={imageFirst ? "order-1" : "order-1 lg:order-2"}
+                    >
+                      <div className="group relative min-h-96 md:min-h-110 rounded-[2rem] overflow-hidden border border-border/70 bg-foreground/2 shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
+                        {useCarousel ? (
+                          <Carousel
+                            className="h-full min-h-96 md:min-h-110"
+                            opts={{ align: "start", loop: true }}
+                            plugins={[Autoplay({ delay: 5000 })]}
+                          >
+                            <CarouselContent className="ml-0 h-full min-h-96 md:min-h-110">
+                              {mediaUrls.map((src, slideIndex) => (
+                                <CarouselItem
+                                  key={`${project.id}-${section.feature}-slide-${slideIndex}`}
+                                  className="pl-0 basis-full"
+                                >
+                                  <div className="relative min-h-96 md:min-h-110 w-full">
+                                    <Image
+                                      src={src}
+                                      alt={`${section.feature} screenshot ${slideIndex + 1} of ${mediaUrls.length}`}
+                                      fill
+                                      sizes="(max-width: 1024px) 100vw, 50vw"
+                                      className={`transition-transform duration-500 ease-out will-change-transform ${section.fit === "contain" ? "object-contain p-4 md:p-6 scale-100 group-hover:scale-105" : "object-cover scale-100 group-hover:scale-105"}`}
+                                    />
+                                    <div className="pointer-events-none absolute inset-0 bg-linear-to-tr from-background/35 via-transparent to-transparent" />
+                                  </div>
+                                </CarouselItem>
+                              ))}
+                            </CarouselContent>
+                            <CarouselPrevious
+                              variant="secondary"
+                              className="left-3 md:left-4 z-20 border-gold/40 bg-background/90 text-foreground hover:bg-background shadow-md"
+                            />
+                            <CarouselNext
+                              variant="secondary"
+                              className="right-3 md:right-4 z-20 border-gold/40 bg-background/90 text-foreground hover:bg-background shadow-md"
+                            />
+                          </Carousel>
+                        ) : (
+                          <>
+                            <Image
+                              src={mediaUrls[0]!}
+                              alt={`${section.feature} image`}
+                              fill
+                              sizes="(max-width: 1024px) 100vw, 50vw"
+                              className={`transition-transform duration-500 ease-out will-change-transform ${section.fit === "contain" ? "object-contain p-4 md:p-6 scale-100 group-hover:scale-110" : "object-cover scale-100 group-hover:scale-110"}`}
+                            />
+                            <div className="pointer-events-none absolute inset-0 bg-linear-to-tr from-background/35 via-transparent to-transparent" />
+                          </>
+                        )}
+                      </div>
                     </div>
-                  </div>
+                  )}
 
                   <div
                     className={imageFirst ? "order-2" : "order-2 lg:order-1"}
                   >
                     <div className="rounded-[2rem] border border-border/70 bg-background/80 backdrop-blur-sm p-6 md:p-8 shadow-[0_20px_60px_rgba(0,0,0,0.06)]">
-                      <p className="text-xs uppercase tracking-[0.3em] text-foreground/40 mb-3">
+                      <p className="text-xs uppercase tracking-[0.3em] text-gold mb-3">
                         Feature
                       </p>
                       <h2 className="text-2xl md:text-4xl font-semibold tracking-tight text-foreground leading-tight">
@@ -217,12 +268,16 @@ export default function ProjectContent({ project }: ProjectContentProps) {
                               {line}
                             </p>
                           ))}
-                          <ul className="list-disc pl-6 space-y-2 leading-relaxed text-foreground/65">
+                          <ul className="list-none pl-4 space-y-3">
                             {bulletLines.map((point, pointIndex) => (
                               <li
                                 key={`${section.feature}-point-${pointIndex}`}
+                                className="flex items-start gap-3"
                               >
-                                {point}
+                                <span className="text-emerald-500 mt-1">✓</span>
+                                <span className="text-foreground/65">
+                                  {point}
+                                </span>
                               </li>
                             ))}
                           </ul>

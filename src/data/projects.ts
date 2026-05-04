@@ -1,15 +1,16 @@
 const projectAssets = {
   salonManagement1: {
     image: "/images/projects/salon/admin_dashboard.png",
-    cardImage: "/images/projects/salon/salon_management.png",
-    galleryImage: "/images/projects/salon/employee_mana.png",
+    cardImage: "/images/projects/salon/salon_management1.png",
+    galleryImage: "/images/projects/salon/empmployee_management1.png",
     cashier_dashboard: "/images/projects/salon/cashierdashboard.png",
     cashier_invoice: "/images/projects/salon/cashier_invoice.png",
-    payroll: "/images/projects/salon/admin_payroll_new.png",
+    // payroll: "/images/projects/salon/admin_payroll_new.png",
+    payroll: "/images/projects/salon/payroll2.png",
     employee_jobCards: "/images/projects/salon/employee_jobcards_new.png",
     employee_performace: "/images/projects/salon/employee_performance_new.png",
     casier_cashDrawer: "/images/projects/salon/Cashier_cashDrower.png",
-    employee_dashboard: "/images/projects/salon/employee_dashboard_new.png"
+    employee_dashboard: "/images/projects/salon/em_dash.png"
   },
   corporate_ecosystem: {
     image: "/images/projects/corporate_ecosystem/corporate_ecosystem.png",
@@ -19,36 +20,95 @@ const projectAssets = {
     business_registration: "/images/projects/corporate_ecosystem/business_registration_new.png",
     tax_registration: "/images/projects/corporate_ecosystem/tax_registration.png",
     tax_return: "/images/projects/corporate_ecosystem/tax_return.jpg",
-    tax_customer_dashboard: "/images/projects/corporate_ecosystem/tax_customer_dashboard.jpg",
+    tax_customer_dashboard: "/images/projects/corporate_ecosystem/darkmode_taxCustomer.png",
     tax_customer_return: "/images/projects/corporate_ecosystem/tax_customer_return.jpg",
     tax_customer_registration: "/images/projects/corporate_ecosystem/tax_customer_registration.jpg",
   },
-  ecomarket: {
-    image: "/images/industries/retail.png",
-    galleryImage: "/images/services/web.png",
+  wettapharma: {
+    image: "/images/projects/wettapharma/wettapharma.jpg",
+    cardImage: "/images/projects/wettapharma/wettapharma.png",
+    galleryImage: "/images/projects/wettapharma/wettapharma.png",
+    admin_dashboard: "/images/projects/wettapharma/wettapharma_admin_dash.png",
+    admin_order: "/images/projects/wettapharma/wettapharma_order.png",
+    admin_payment: "/images/projects/wettapharma/wettapharma_payments.png",
+    doctor_side: "/images/projects/wettapharma/doctor_side1.jpg",
+    credit_management1: "/images/projects/wettapharma/credit_management1.png",
+    credit_management2: "/images/projects/wettapharma/credit_management2.png",
+    cash_on_delivary_mobile: "/images/projects/wettapharma/cash_on_delivary_mobile.png",
+    cash_on_delivary1: "/images/projects/wettapharma/cash_on_delivary1.png",
+    cash_on_delivary2: "/images/projects/wettapharma/cash_on_delivery2.png",
+    credit_ordering1: "/images/projects/wettapharma/Credit1.png",
+    credit_ordering2: "/images/projects/wettapharma/Credit3.png",
+    credit_ordering_mobile: "/images/projects/wettapharma/credit_ordering_mobile.png",
   },
-  learnloop: {
-    image: "/images/industries/edtech.png",
-    galleryImage: "/assets/imgs/heros/robot.png",
+  mn_homes: {
+    image: "/images/projects/MN_Homes/mn_group.jpg",
+    cardImage: "/images/projects/MN_Homes/mn_group.jpg",
+    galleryImage: "/images/projects/MN_Homes/mn_group.jpg",
+    workflow_dashboard: "/images/projects/MN_Homes/Screenshot 2026-04-30 160550.png",
+    mn_group_project_registry: "/images/projects/MN_Homes/Screenshot 2026-04-30 162947.png",
+    project_dark1: "/images/projects/MN_Homes/project_dark1.png",
+    project_dark2: "/images/projects/MN_Homes/project_dark2.png",
+    project_dark3: "/images/projects/MN_Homes/project_dark3.png",
+    projects1: "/images/projects/MN_Homes/projetcs1.png",
+    projects2: "/images/projects/MN_Homes/projetcs2.png",
+    projects3: "/images/projects/MN_Homes/projetcs3.png",
+    workflow: "/images/projects/MN_Homes/work_flow1.png",
+    workflow_dark: "/images/projects/MN_Homes/work_flow_dark.png",
+    petty_cash: "/images/projects/MN_Homes/petty_cash.png",
+    boq_light: "/images/projects/MN_Homes/boq1.png",
+    boq_dark: "/images/projects/MN_Homes/boq_dark1.png",
+    mn_homes_dark: "/images/projects/MN_Homes/Material Items_dark.png",
+    mn_homes_light: "/images/projects/MN_Homes/Material Items_light.png"
   },
-  estateview: {
-    image: "/images/industries/realestate.png",
-    galleryImage: "/images/services/uiux.png",
+  payroll_management: {
+    image: "/images/projects/MN_payroll_management/payroll_management.png",
+    galleryImage: "/images/projects/MN_payroll_management/payroll_management.png",
+    cardImage: "/images/projects/MN_payroll_management/payroll_management.png",
+    employee_registration_dark: "/images/projects/MN_payroll_management/employee_registration_dark.png",
+    paysheet1: "/images/projects/MN_payroll_management/paysheet1.png",
+    paysheet2: "/images/projects/MN_payroll_management/paysheet2.png",
+    leave1: "/images/projects/MN_payroll_management/leaves01.png",
+    leave2: "/images/projects/MN_payroll_management/leaves02.png",
   },
-  travelmate: {
-    image: "/images/industries/travel.png",
-    galleryImage: "/images/services/devops.png",
+  customer_relationship_management: {
+    image: "/images/projects/MN_CRM/crm.png",
+    galleryImage: "/images/projects/MN_CRM/crm.png",
+    cardImage: "/images/projects/MN_CRM/crm.png",
+    leads_management1: "/images/projects/MN_CRM/CRM1.png",
+    leads_management2: "/images/projects/MN_CRM/CRM2.png",
+    leads_management3: "/images/projects/MN_CRM/CRM03.jpeg",
+    leads_management4: "/images/projects/MN_CRM/CRM4.png",
   },
 } as const;
 
 type ProjectSection = {
   feature: string;
   description: string;
-  image: string;
+  /** Single screenshot. Used when `images` is omitted or has only one URL. */
+  image?: string;
+  /** Multiple screenshots for this feature; shown in a carousel when more than one. */
+  images?: readonly string[];
   fit?: "cover" | "contain";
 };
 
-export const projects = [
+type Project = {
+  id: string;
+  title: string;
+  category: string;
+  image: string;
+  cardImage?: string;
+  galleryImage?: string;
+  description: string;
+  tags: readonly string[];
+  link: string;
+  longDescription?: string;
+  challenge?: string;
+  solution?: string;
+  sections: ProjectSection[];
+};
+
+export const projects: Project[] = [
   {
     id: "central-salon",
     title: "Salon Management System",
@@ -63,84 +123,100 @@ export const projects = [
       {
         feature: "Admin Dashboard",
         description:
-          `- This UI features a sleek, high-contrast layout that pairs a dark sidebar with a clean, airy workspace.
-- It uses a soft-UI aesthetic with rounded corners, subtle shadows, and vibrant purple and orange gradients to draw attention to key data.
-- KPI Cards: Four prominent metric cards display high-level financials (like Revenue in LKR) using bold typography and glassmorphic icons for high scannability.
-- Data Visualization: A stylized bar chart tracks "Employee Salary Overview," using a consistent gradient theme to make complex data feel approachable.
-- Navigation & UX: The left-hand sidebar organizes a deep module list (Payroll, Stock, Invoices) into a compact, vertical menu, while top-level tabs allow quick switching between analytics and system status.
-- Visual Hierarchy: A light background for the main content keeps colorful data points as the primary focal point for users.`,
+          `
+This UI features a sleek, high-contrast layout that pairs a dark sidebar with a clean, airy workspace. It uses a soft-UI aesthetic with rounded corners, subtle shadows, and vibrant purple and orange gradients to draw attention to key data.
+- KPI Cards
+- Data Visualization
+- Navigation & UX
+- Visual Hierarchy`,
         image: projectAssets.salonManagement1.image,
       },
       {
         feature: "Employee Management",
         description:
-
-          `- Summary KPI Cards: The top section features four distinct cards using a soft-shadow floating effect. Each card uses color-coded icons (Blue, Green, Red, and Orange) to instantly differentiate between total, active, inactive staff, and payroll totals.
-- Structured Data Table: The main workspace uses a clean tabular view with plenty of white space. It organizes complex information—including employee avatars, contact details, and financial data—into a scannable, high-contrast list.
-- Functional UI Elements: * A prominent "+ Add Employee" primary button in deep purple serves as a clear Call to Action (CTA).
--The search and filter bar is integrated seamlessly above the table for quick data sorting.`,
+          `
+A clean, high-functioning employee management interface that balances visual clarity with data density. The layout uses a soft-shadow floating effect for KPI cards and a spacious, high-contrast table for structured employee data, making complex information easy to scan and act upon.
+- Summary KPI Cards
+-  Structured Data Table
+- Functional UI Elements
+- Search & Filter Integration`,
         image: projectAssets.salonManagement1.galleryImage,
+        fit: "contain",
       },
       {
         feature: "Payroll",
         description:
-          `- Data Visualization: It includes a dedicated "Employee Salary Overview" chart area, allowing administrators to visually track salary trends and distributions at a glance rather than just reading rows of numbers.
-          -Automated Salary Processing: The system allows admins to calculate gross salaries, commissions, and deductions (like EPF and advance payments) automatically for a specific period.
-          -Advanced Data Filtering: Users can drill down into specific records using filters for Employee names, Date ranges, and Status, making it easy to manage large teams.
-          -Comprehensive Payroll Reporting: The "Payroll Records" table provides a detailed breakdown of every financial component, and the "Export Report" feature enables the generation of formal documents for accounting purposes.`,
+          `
+    A clean salary calculation interface for admins to calculate employee salaries based on commission or daily rate. It brings together employee details, attendance, advances, loans, EPF contributions, commissions, and earnings—all in one organized view for accurate payroll processing.
+- Commission Mode & Daily Rate Options
+- Employee Selection & Date Range
+- Auto Advance Deduction
+-  Employee Basic Details & Attendance Summary
+- Advance & Loan Summary
+- Earning Summary` ,
         image: projectAssets.salonManagement1.payroll,
-        // fit: "contain",
+        fit: "contain",
       },
       {
         feature: "Cashier Dashboard",
         description:
-          `-Data-Driven Visual Hierarchy: The dashboard uses a sophisticated card-based layout that prioritizes high-level KPIs (Total Revenue, Expenses) at the top, followed by interactive charts for deep-dive analysis, ensuring a clean and professional user experience.
-          - Comprehensive Revenue Insights: Provides a real-time breakdown of daily earnings categorized by payment methods (Cash, Card, Online) and tracks total invoices at a glance.
-          - Performance Analytics: Features dedicated visual sections for "Most Active Staff" and "Top Earners" using bar charts, along with a "Top Services" analysis to identify the salon's most profitable offerings.
-          - Operational Trend Tracking: Includes an "Hourly Sales Trend" area chart to monitor peak business hours and a dedicated expense/advance tracker to manage daily cash flow effectively.
-          `,
+          `
+        A data-driven cashier dashboard designed for real-time financial oversight and performance tracking. The layout uses a sophisticated card-based hierarchy with interactive charts, giving salon managers instant visibility into revenue, staff performance, and operational trends without digging through multiple screens.
+- Data-Driven Visual Hierarchy
+- Comprehensive Revenue Insights
+- Performance Analytics
+- Operational Trend Tracking `,
 
         image: projectAssets.salonManagement1.cashier_dashboard,
       },
       {
         feature: "Cashier Cash Drawer",
         description:
-          `- Structured Modal Layout: The interface utilizes a well-organized grid system within a modal, separating complex calculations into distinct sections like Bank Summary and Cash Counter, which prevents information overload during the end-of-day reconciliation process.
-        - Automated Reconciliation Logic: The system automatically calculates the "Expected Closing Balance" by factoring in opening balances, cash sales, expenses, tips, and advances, reducing the risk of human error.
-        - Physical Cash Denomination Counter: Includes a dedicated "Cash Counter" feature that allows users to input specific note counts (e.g., 100s, 50s, 20s) to verify that the physical cash in hand matches the system's digital records.
-        -Real-time Discrepancy Tracking: Features a dynamic "Difference" indicator that provides instant visual feedback—such as a "Cash matches expected balance" confirmation—to ensure total transparency before closing the drawer.`,
+          `
+          A structured cash reconciliation interface designed for accurate end-of-day drawer closure. The layout uses a well-organized modal grid system that separates bank summaries from cash counter inputs, preventing information overload while ensuring every note and transaction is accounted for before closing.
+- Structured Modal Layout
+- Automated Reconciliation Logic
+- Physical Cash Denomination Counter
+- Real-time Discrepancy Tracking`,
 
         image: projectAssets.salonManagement1.casier_cashDrawer,
       },
       {
         feature: "Invoice Management",
         description:
-          `-User-Centric POS Layout: The interface features a highly efficient split-screen design, combining a visual service catalog with a real-time "Invoice Summary" sidebar, which enables cashiers to process transactions quickly without navigating away from the page.
-          -Dynamic Service Selection: Includes a categorized filtering system (e.g., Mens, Kids, Ladies) and a search bar, allowing users to quickly find and add services to queue with a single click.
-          -Flexible Pricing & Employee Attribution: The system allows for custom service price overrides and assigns specific employees to services, ensuring accurate commission tracking and personalized billing.
-          - Comprehensive Checkout Management: Supports multi-channel payment processing (Cash, Card, etc.) with built-in functionality for applying discounts, adding notes, and viewing instant subtotal/total calculations.`,
+          `
+          A fast and simple billing screen for cashiers. It uses a split-screen design with services on one side and the bill summary on the other. Cashiers can find items, add them to the bill, and complete payments—all without leaving the page.
+- Easy Split-Screen Layout
+- Quick Service Search & Filters (Mens, Kids, Ladies)
+- Custom Price & Staff Assignment
+- Flexible Payments (Cash, Card) with Discounts & Notes`,
 
         image: projectAssets.salonManagement1.cashier_invoice,
       },
       {
         feature: "Employee Dashboard",
         description:
-          ` - Personalized Analytics Layout: The dashboard uses a clean, card-based interface with a vibrant purple theme that effectively balances personal greeting elements with high-priority performance metrics and data visualizations.
-        - Individual Performance Metrics: Provides employees with a quick overview of their daily and monthly earnings, total services performed today, and any advances taken through intuitive summary cards.
-        - Visual Earnings & Advances Tracking: Features a dynamic "Area Chart" that allows employees to monitor their financial trends over time, helping them visualize the relationship between their work volume and total income.
-        - Real-Time Service Log: Includes a dedicated "Today's Services" sidebar that lists specific tasks (like haircuts or beard trims) with invoice numbers and status tags, providing clear visibility into their daily workload.
-        `,
+          `
+          A clean, personal dashboard for employees to track their own performance and earnings. It uses a simple card layout with a purple theme, showing daily totals, monthly income, and recent work history—all in one place.
+- Simple Personal Dashboard
+- Daily & Monthly Earnings Summary
+- Easy Earnings Trend Chart
+- Today's Service List with Status
+          `,
 
         image: projectAssets.salonManagement1.employee_dashboard,
-        //  fit: "contain",
+        fit: "contain",
       },
       {
         feature: "Employee Job Cards",
         description:
-          `- Grid-Based Card Architecture: The interface utilizes a clean, repeatable card component system that neatly encapsulates individual service records, making it easy for employees to scan through a high volume of tasks while maintaining visual consistency.
-        - Real-Time Status Tracking: Each card clearly displays the current progress of a task with color-coded "Pending" or "Completed" status badges, ensuring employees can quickly distinguish between ongoing and finished work.
-        - Comprehensive Service Summaries: Provides essential job details at a glance, including unique invoice IDs, service names, customer types, payment methods (Cash/Mixed), and the total price for each transaction.
-        - Detailed Record Exploration: Features a "View Details" action on every card, allowing users to drill down into specific service data, while the integrated pagination system handles large record sets (over 200 records) efficiently.`,
+          `
+          A simple card layout that shows each service job assigned to an employee. It helps workers quickly see what's pending, what's completed, and all the important details—without opening multiple screens.
+- Clean & Repeatable Card Design
+- Color-Coded Status (Pending / Completed)
+- Key Job Details (Invoice ID, Service, Price, Payment Type)
+- View Details Button & Page Navigation
+          `,
 
         image: projectAssets.salonManagement1.employee_jobCards,
         //  fit: "contain",
@@ -148,10 +224,13 @@ export const projects = [
       {
         feature: "Employee Performance",
         description:
-          `- Intuitive Analytical Dashboard: The page utilizes a sophisticated data-visualization layout with a balanced mix of donut, bar, and line charts, providing a comprehensive professional summary while maintaining a clean, modern aesthetic.
-          - Multi-Dimensional Time Filtering: Users can seamlessly toggle between Daily, Weekly, Monthly, and Yearly views, allowing employees to track their growth and revenue trends across different time scales.
-          - Customer Distribution Insights: Features a "Booking vs. Walk-In" donut chart that helps employees understand their client acquisition sources and optimize their availability accordingly.
-          - Comparative Productivity Metrics: Includes dedicated bar charts for "Top Services" and "Top Employees," enabling individuals to identify their most popular services and see how they rank within the team's overall performance.`,
+          `
+          A clean analytics dashboard that helps employees see how well they're performing. It uses simple charts like donuts and bars to show earnings, top services, and how they compare with teammates—all in one place.
+- Simple Charts (Bar, Line, Donut)
+- Easy Date Filters (Daily, Weekly, Monthly, Yearly)
+- Booking vs. Walk-In Breakdown
+- Top Services & Team Comparison 
+          `,
         image: projectAssets.salonManagement1.employee_performace,
         // fit: "contain",
       },
@@ -166,36 +245,44 @@ export const projects = [
     image: projectAssets.corporate_ecosystem.image,
     cardImage: projectAssets.corporate_ecosystem.cardImage,
     galleryImage: projectAssets.corporate_ecosystem.galleryImage,
-    description: "A professional Salon Management System designed to streamline appointment scheduling, service tracking, and staff management with a real-time administrative dashboard.",
-    tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS", "Shadcn/UI"],
+    description: "This platform facilitates business registration, allows requesting tax numbers, and provides access to tax details. It makes the registration process more efficient and transparent, while centralizing tax related information for easy access.",
+    tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
     link: "https://example.com",
     sections: [
       {
         feature: "Admin Dashboard",
         description:
-          `- Professional Management Interface: The dashboard features a clean, corporate-style design with a vibrant "stat-card" row and high-contrast sidebar, ensuring that critical business metrics and navigation are immediately accessible to administrators.
-- Centralized Operations Overview: Provides a high-level summary of total revenue, customer growth, and the volume of pending or completed business registrations at a single glance.
-- Submission Workflow Tracking: Features a dedicated "Application Status" tracker and "Revenue Analytics" chart to monitor the flow of registrations from the customer to the government processing stage.
-- Real-Time Activity Auditing: Includes a "Recent Activities" log that tracks user logins, tax return creations, and system updates, ensuring full transparency and accountability across the platform.`,
+          `
+          A clean, professional dashboard for administrators to monitor key business metrics at a glance. It uses a simple stats row and sidebar layout, making it easy to track revenue, registrations, and recent system activity all in one place.
+- Clean Stats Cards
+- Revenue & Customer Summary
+- Registration Status Tracker
+- Recent Activity Log (Logins, Updates, etc.)
+          `,
         image: projectAssets.corporate_ecosystem.admin_dashboard,
       },
       {
         feature: "Admin Business Registration",
         description:
-          `- Clean Data-Centric Interface: The page features a well-structured tabular layout with ample white space and clear typography, ensuring that high volumes of registration data remain legible and easy for administrators to manage.
-          - Multi-Stage Status Tracking: The table provides instant visibility into the registration lifecycle using color-coded badges for payment status, current processing steps, and application types (e.g., "New Company").
-          - Advanced Filtering & Search: Includes global search functionality and granular filters for "Status" and "Steps," allowing admins to quickly isolate specific requests or identify bottlenecks in the registration pipeline.
-          - Interactive Workflow Management: Each row acts as a gateway to deeper details, featuring an "Actions" view that enables admins to review customer submissions and progress through the government compliance process directly.`,
+          `
+          A clean, simple table layout that helps admins manage all business registration requests. It shows status, payment info, and application type for each submission—making it easy to track progress from start to finish.
+- Clean & Easy-to-Read Table
+- Color-Coded Status Badges
+- Search & Filter Options
+- Action Button to Review Each Request
+          `,
 
         image: projectAssets.corporate_ecosystem.business_registration,
       },
       {
         feature: "Admin Tax Registration",
         description:
-          `- Professional Admin Interface: The interface features a highly organized, table-driven design with a clean sidebar and consistent iconography, optimized for efficient data retrieval and administrative task management.
-         - Detailed Tax Identification Tracking: The system captures and displays essential registration data at a glance, including customer identity (with avatars), specific Tax Types (e.g., Individual IIT), and unique TIN numbers.
-         - Lifecycle Status Management: Includes clear, color-coded status indicators (such as "COMPLETED") and registration dates, helping administrators prioritize pending requests and track historical approvals.
-         - Comprehensive Search & Filter System: Equipped with an advanced search bar (supporting Name, Email, NIC, or TIN) and dropdown filters for Status and Type, ensuring fast access to specific tax records within a growing database.
+          `
+           A clean, well-organized table that helps admins manage all tax registration requests. It shows customer details, tax type, TIN number, and status at a glance—making it easy to track who's registered and who's still pending.
+- Clean Table Layout with Icons
+- Customer & Tax Type Overview
+- Color-Coded Status (Completed, Pending, etc.)
+- Smart Search (Name, Email, NIC, TIN) & Filters
           `,
 
         image: projectAssets.corporate_ecosystem.tax_registration,
@@ -204,187 +291,417 @@ export const projects = [
         feature: "Admin Tax Return",
         description:
           `
-        - Analytical Summary Dashboard: The interface features a "top-shelf" stat row that provides immediate visual context of the workload (Approved, Pending, and Draft counts), paired with a clean, structured table for efficient record navigation.
-- Centralized Taxpayer Profiles: The table consolidates all critical customer identifiers in one view, including Name, TIN, NIC, and contact details, allowing administrators to verify identity without opening multiple tabs.
-- Submission Workflow Visibility: By tracking the "Account Status" and providing real-time stats on pending vs. approved returns, the system helps admins prioritize urgent government submissions and manage deadlines.
-- Streamlined Data Retrieval: Features a dynamic search and status filtering system that allows administrators to pinpoint specific tax returns quickly, with direct "Action" buttons for processing individual customer details.
+          A simple dashboard that helps admins manage all tax return submissions. It shows quick stats (Approved, Pending, Draft) at the top and a clean table below with customer details and return status—making it easy to track and process each submission.
+- Quick Stats Cards (Approved, Pending, Draft)
+- Customer Details at a Glance (Name, TIN, NIC, Contact)
+- Pending vs. Approved Return Tracker
+- Search, Filter & Action Buttons
         `,
         image: projectAssets.corporate_ecosystem.tax_return,
       },
       {
         feature: "Tax Customer Dashboard",
         description:
-         `
-         - Intuitive Progress-Focused Layout: The dashboard utilizes a clean, modern card-based design that prioritizes transparency, featuring a prominent visual progress tracker that allows customers to see exactly where they stand in the multi-step government registration process.
-         - Real-Time Status Monitoring: Provides a high-level summary of total registrations, payment statuses, and costs, combined with a detailed "Latest Registration" card showing step-by-step progress from submission to completion.
-         - Comprehensive Service Overview: Includes a "Quick Stats" section and "Registration Status Distribution" bar, giving customers a quick way to audit their documents, tax returns, and profile completion status.
-         - Enhanced User Navigation: Features a "Quick Actions" panel and "Recent Activity" log, enabling users to jump directly to specific tasks or track historical updates like individual income tax milestones and assessment years.
-         `,
-        
+          `
+        A simple, customer-friendly dashboard that helps users track their tax registration progress. It shows exactly which step they're on, what's paid, and what's pending—so customers always know where they stand.
+- Easy Progress Tracker
+- Registration Status & Payment Summary
+- Quick Stats at a Glance
+- Quick Action Buttons & Recent Activity Log
+          `,
+
         image: projectAssets.corporate_ecosystem.tax_customer_dashboard,
+        fit: "contain",
+
       },
       {
         feature: "Customer Tax Returns by Year",
         description:
-       `
-       - Clean Card-Based Navigation: The interface uses high-quality, illustrative cards to represent different assessment years, creating a visually distinct and tactile navigation experience that makes finding historical tax records effortless for the user.
-       - Annual Return Organization: Efficiently categorizes tax returns by their specific assessment year (e.g., 2026, 2027), allowing users to maintain a clear chronological history of their individual income tax filings.
-       - Instant Status Visibility: Each card features a color-coded status badge (such as "Pending" or "Accepted") and displays critical upcoming deadlines, ensuring users stay informed about their compliance status at a glance.
-       - Interactive Detail Access: Provides a "Continue" action for ongoing filings and clickable cards that serve as entry points to comprehensive data, including declarations and supporting document management for each specific year.
-       
+          `
+       A simple card layout that helps customers view their tax returns organized by year. Each card shows the assessment year, status, and deadline—making it easy to see what's done and what's still pending.
+- Clean Year-by-Year Cards
+- Assessment Year (2026, 2027, etc.)
+- Status Badge (Pending, Accepted) & Deadline
+- Click to View or Continue Filing
        `,
-       
+
         image: projectAssets.corporate_ecosystem.tax_customer_return,
       },
       {
         feature: "Customer Tax Registration",
         description:
-       `
-       - Progress-Centric Card Design: The interface uses a clean, high-contrast card that prominently features a visual linear stepper, allowing users to instantly understand their current stage in the tax registration process without reading dense text.
-       - Visual Milestone Tracking: Uses a 5-step progress bar with status indicators (Submitted, Review, Payment, TIN, Completed) to provide full transparency on the registration lifecycle.
-       - Real-time Status Updates: Displays a clear percentage-based completion badge and specific status labels (e.g., "Completed") so customers stay updated on their "Individual Income Tax" application progress.
-       - Direct Data Accessibility: Features a prominent "View All Data" action button, giving users immediate access to in-depth records, submitted documents, and detailed registration information for their specific services.
-       `,
-        
+          `
+       A simple card layout that helps customers track their tax registration progress step by step. It shows exactly which stage they're on—from submission to completion—so there's no confusion about what's left to do.
+
+- Easy Step-by-Step Progress Tracker
+- 5 Clear Stages (Submitted → Review → Payment → TIN → Completed)
+- Completion Percentage & Status Badge
+- View All Data" Button for Full Details
+          `,
+
         image: projectAssets.corporate_ecosystem.tax_customer_registration,
       },
     ] satisfies ProjectSection[],
   },
   {
-    id: "ecomarket",
-    title: "EcoMarket",
+    id: "wettapharma",
+    title: "Medical E-commerce",
     category: "E-commerce",
-    image: projectAssets.ecomarket.image,
-    galleryImage: projectAssets.ecomarket.galleryImage,
-    description: "Sustainable marketplace with carbon footprint tracking.",
-    tags: ["Shopify", "React", "GraphQL"],
+    image: projectAssets.wettapharma.image,
+    cardImage: projectAssets.wettapharma.cardImage,
+    galleryImage: projectAssets.wettapharma.galleryImage,
+    description: "This website is a secure platform designed exclusively for doctors. After registering, doctors can log in to browse products uploaded by the administrator. They can request products directly, eliminating the need for intermediaries. Once approved by the admin, they can place orders normally. This simplifies the procurement process for doctors, making it more efficient.",
+    tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
     link: "https://example.com",
-    longDescription:
-      "EcoMarket is a multi-vendor marketplace dedicated to sustainable products. It features a unique carbon footprint calculator that estimates the environmental impact of each purchase.",
-    challenge:
-      "Calculating accurate carbon footprints in real-time based on shipping distance and product materials.",
-    solution:
-      "We developed a custom algorithm integrated with logistics APIs to calculate emissions dynamically. The frontend is a headless Shopify setup using React and GraphQL for maximum flexibility.",
     sections: [
       {
-        feature: "Vendor Control Center",
+        feature: "Admin Dashboard",
         description:
-          "Marketplace admins can monitor vendor status, inventory pipelines, and fulfillment health from a consolidated command view.",
-        image: projectAssets.ecomarket.image,
+          `
+A clean, business-focused dashboard designed for the admin to manage bulk medicine distribution. It provides a quick overview of monthly sales, active customers, orders, and order lifecycle status—all in one place for complete control and monitoring.
+- Sales This Month
+- Active Customers & Total Customers
+- Active Orders Tracker
+- Order Lifecycle Pie Chart (Pending, Processing, Shipped, Delivered)
+- Monthly Revenue Analytics Chart
+- Easy Sidebar Navigation (Products, Orders, Payments, Doctors, Credit History, Financial History, etc.)
+          `,
+        image: projectAssets.wettapharma.admin_dashboard,
       },
       {
-        feature: "Carbon Impact Module",
+        feature: "Admin Order Management",
         description:
-          "Each order is enriched with real-time environmental estimates, helping customers and teams make more sustainable decisions.",
-        image: projectAssets.ecomarket.galleryImage,
+          `
+      A clean order management dashboard designed for the admin to track customer orders, dispatch frequency, and fulfillment rates. It provides a complete view of pending, shipped, and delivered orders—helping admins monitor order flow and revenue in real time.
+- Order Velocity Chart (Dispatch Frequency)
+- Active Order Status (Pending, Shipped, Delivered)
+- Gross Revenue Overview
+- Fulfillment Rate Tracker
+- Quick Search (Order Number, Client Name, License, Phone)
+- Dispatch Reporting Suite
+- Multiple Analysis Types (Item-Level, Financial Ledger, Volume Summary)
+- Quick Filters (This Month, Live Status, All Payments, Reset)
+          `,
+        image: projectAssets.wettapharma.admin_order,
       },
       {
-        feature: "Campaign Intelligence",
+        feature: "Admin Payment Management",
         description:
-          "Promotional performance and conversion behavior are captured in live dashboards for continuous campaign tuning.",
-        image: "/images/services/database.png",
+          `
+         A clean financial dashboard designed for the admin to track all payment transactions. It provides a complete overview of income, settled fees, outstanding amounts, refunds, and revenue trends—making financial monitoring simple and transparent.
+- Income Overview (Period-Based)
+- Settled Fees & Net Payments
+- Total Outstanding & Total Refunds
+- Revenue Trend Chart (Last 30 Days)
+- Payment Split by Method (Cash & Doctor Credit)
+- Easy Navigation (View Store & Super Admin)
+          `,
+        image: projectAssets.wettapharma.admin_payment,
+      },
+      {
+        feature: "Credit Management",
+        description:
+          `
+        A clean credit tracking interface for admins to monitor doctor-wise credit usage and payment deadlines. It provides a complete overview of total credit exposure, doctors in debt, near-due accounts, and individual credit utilization—helping manage financial risk effectively.
+- Financial Risk Alert (Critical Credit Status)
+- Total Credit Exposure Overview
+- Doctors in Debt Counter
+- Near Due (7 Days) Tracker
+- Search by Doctor Name or License
+- Credit Utilization per Doctor (Used / Limit)
+- Terms & Due Date Display
+- Action Buttons (Payment History, Settle Credit, Send Reminder)
+          `,
+        images: [
+          projectAssets.wettapharma.credit_management1,
+          projectAssets.wettapharma.credit_management2,
+        ]
+      },
+
+
+      {
+        feature: "Cash on Delivery",
+        description:
+          `
+        A clean payment selection interface for doctors to choose how to pay for their bulk medicine order. This view highlights the Cash on Delivery option, showing the customer their order details, COD savings, and final total—along with their available credit balance if they prefer credit ordering instead.
+- Order Summary with Product Names & Prices
+- COD Savings (10% Discount) Clearly Shown
+- Subtotal, Shipping & Final Total
+- Back & Secure Checkout Button
+- Security Note (Encrypted Transaction & Terms Agreement)
+          `,
+        images: [
+          projectAssets.wettapharma.cash_on_delivary1,
+          projectAssets.wettapharma.cash_on_delivary2,
+          projectAssets.wettapharma.cash_on_delivary_mobile
+        ]
+      },
+
+
+      {
+        feature: "Credit Ordering",
+        description:
+          `
+      A clean payment selection interface for doctors to choose how to pay for their bulk medicine order. This view highlights the Credit Ordering option, clearly showing the customer their current credit usage, projected credit after order, remaining balance, and final total—giving full transparency before confirmation.
+
+- Two Payment Options (Cash on Delivery / Credit Ordering)
+- Customer Credit Balance Display (Used / Total Limit)
+- Projected Credit After Order Calculation
+- Remaining Credit Balance After Order-
+- Order Summary with Product Names & Individual Prices
+- Subtotal, Shipping & Final Total
+- Easy Navigation Tabs (Products, Categories, Agencies, Brands, Offers, Contact)
+          `,
+        images: [
+          projectAssets.wettapharma.credit_ordering1,
+          projectAssets.wettapharma.credit_ordering2,
+          projectAssets.wettapharma.credit_ordering_mobile,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Collection & Cart Overview",
+        description:
+          `
+        A clean product browsing and shopping interface designed for doctors to discover and order pharmaceutical items. The layout combines a product listing with filter options, a mini cart summary, and detailed product information—allowing users to browse, refine, select, and review their order without leaving the page.
+- Product Grid with Pricing
+- Refine Filters (Classification, Discovery, Order Constraints)
+- Mini Cart with Total & Note Option
+- You May Also Like Suggestions
+- Product Details Card (Name, Strength, Price, Supplier)
+- Checkout & Continue Shopping
+          `,
+        image: projectAssets.wettapharma.doctor_side,
       },
     ] satisfies ProjectSection[],
   },
   {
-    id: "learnloop",
-    title: "LearnLoop",
-    category: "EdTech",
-    image: projectAssets.learnloop.image,
-    galleryImage: projectAssets.learnloop.galleryImage,
-    description: "AI-powered learning management system for universities.",
-    tags: ["Python", "Django", "TensorFlow", "React"],
+    id: "MN_Homes",
+    title: "MN Homes",
+    category: "Enterprise Solutions",
+    image: projectAssets.mn_homes.image,
+    cardImage: projectAssets.mn_homes.cardImage,
+    galleryImage: projectAssets.mn_homes.galleryImage,
+    description: "This website is a secure platform designed exclusively for doctors. After registering, doctors can log in to browse products uploaded by the administrator. They can request products directly, eliminating the need for intermediaries. Once approved by the admin, they can place orders normally. This simplifies the procurement process for doctors, making it more efficient.",
+    tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
     link: "https://example.com",
-    longDescription:
-      "LearnLoop uses artificial intelligence to personalize learning paths for university students. It analyzes student performance and adapts the curriculum to their learning style.",
-    challenge:
-      "Creating an AI model that could accurately predict student needs without bias.",
-    solution:
-      "We trained a TensorFlow model on anonymized educational data and integrated it with a Django backend. The system provides real-time insights to professors and adaptive content to students.",
     sections: [
       {
-        feature: "Academic Admin Hub",
+        feature: "Active Projects Dashboard",
         description:
-          "University administrators can track enrollments, attendance signals, and curriculum readiness through one unified dashboard.",
-        image: projectAssets.learnloop.image,
+          `
+         A clean project tracking dashboard designed for admins to monitor active projects, task pipelines, and conversion rates. It provides a complete view of project metrics alongside BOQ creation vs. approval analytics—helping teams track progress over time.
+- Total Projects Recorded
+- Tasks in Pipeline
+- Quick Conversion Rate
+- Active on Site
+- BOQ Analytics Chart (Creation vs Approval Lifecycle)
+         `,
+        image: projectAssets.mn_homes.workflow_dashboard,
+        fit: "contain",
       },
       {
-        feature: "Adaptive Learning Metrics",
+        feature: "Project Management Dashboard",
         description:
-          "The platform visualizes student progression patterns and recommendation quality to improve teaching outcomes semester by semester.",
-        image: projectAssets.learnloop.galleryImage,
+          `
+A  complete construction project dashboard combining project details, task progress, and resource tracking in one view. Admins can monitor stage completion, task status, stock quantities, material requests, and timeline all from one place.
+- Project Status, Timeline & Location
+- Stage Completion Chart (Foundation, Excavations)
+- Task Breakdown with Progress & Status (Done / Due)
+- Stock Items & Material Requests (Pending / Approved)
+- Statistics Chart (March vs April)
+- Total Days, Days Left & Completion Percentage
+- Zoom Options (Daily, Monthly, Quarterly)
+
+         `,
+        images: [
+          projectAssets.mn_homes.mn_group_project_registry,
+          projectAssets.mn_homes.projects1,
+          projectAssets.mn_homes.projects2,
+          projectAssets.mn_homes.projects3,
+          projectAssets.mn_homes.project_dark1,
+          projectAssets.mn_homes.project_dark2,
+          projectAssets.mn_homes.project_dark3,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Work flow",
+        description:
+          `
+         A clean workflow tracking interface for construction project stages. It separates active stages from completed stages, showing task counts, completion percentages, date ranges, and overdue status for each stage.
+- Active / Other Stages
+- Completed Stages Counter
+- Stage Completion Percentage
+- Task Count per Stage
+- Stage Date Ranges
+- Overdue Status with Days Overdue
+- Note Field per Stage
+- Actions Button
+         `,
+        images: [
+          projectAssets.mn_homes.workflow,
+          projectAssets.mn_homes.workflow_dark,
+        ],
+        fit: "contain",
+      },
+
+
+      {
+        feature: "Petty Cash",
+        description:
+          `
+      A clean petty cash tracking interface for construction projects. It shows total received, total spent, and current balance at the top, followed by two separate tables — one for petty cash requests and one for petty cash reimbursements.
+      - Total Received, Total Spent & Current Balance
+- Petty Cash Requests Table (Date, Request ID, Description, Status, Request Amount, Approve Amount, Remark)
+- Petty Cash Reimbursements Table (Date, Request ID, Approved Amount, Expense Amount, Balance Amount, Receipts, Remark)
+
+
+         `,
+        image:
+          projectAssets.mn_homes.petty_cash
+
+      },
+
+      {
+        feature: "BOQ & Quotation",
+        description:
+          `
+         A clean bill of quantities dashboard designed for construction project management. It organizes all work categories—from preliminary work to painting—in a simple table format with code, description, unit, quantity, rate, and value, making cost tracking and approval easy for admins.
+        - Work Categories (Preliminary, Excavation, Concrete, Masonry, Roof, Plumbing, Electrical, Painting, etc.)
+- Unit, Quantity, Rate & Value Columns
+- Status Checkmarks per Category
+- Action Buttons (Processing, Approve, Reject)
+         `,
+        images: [
+          projectAssets.mn_homes.boq_dark,
+          projectAssets.mn_homes.boq_light
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Meterial Plan",
+        description:
+          `
+         A clean bill of quantities dashboard designed for construction project management. It organizes all work categories—from preliminary work to painting—in a simple table format with code, description, unit, quantity, rate, and value, making cost tracking and approval easy for admins.
+        - Work Categories (Preliminary, Excavation, Concrete, Masonry, Roof, Plumbing, Electrical, Painting, etc.)
+- Unit, Quantity, Rate & Value Columns
+- Status Checkmarks per Category
+- Action Buttons (Processing, Approve, Reject)
+         `,
+        images: [
+          projectAssets.mn_homes.mn_homes_dark,
+          projectAssets.mn_homes.mn_homes_light
+        ],
+      },
+
+    ] satisfies ProjectSection[],
+  },
+  {
+    id: "payroll-management",
+    title: "Payroll Management System",
+    category: "Payroll Management",
+    image: projectAssets.payroll_management.image,
+    cardImage: projectAssets.payroll_management.cardImage,
+    galleryImage: projectAssets.payroll_management.galleryImage,
+    description: "This website is a secure platform designed exclusively for doctors. After registering, doctors can log in to browse products uploaded by the administrator. They can request products directly, eliminating the need for intermediaries. Once approved by the admin, they can place orders normally. This simplifies the procurement process for doctors, making it more efficient.",
+    tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
+    link: "https://example.com",
+    sections: [
+      {
+        feature: "Employee Registration & Management",
+        description:
+          `
+          A clean employee registration interface for capturing complete employee profiles. It is organized in a two-column layout with fields for employee photo, EMP No, EPF No, NIC, Birthday, Display Name (required), Full Name, Contact numbers (required), Civil Status, Gender, Email, Address, and Temporary Address.
+- Employee Photo Upload
+- EMP No, EPF No & NIC
+- Birthday & Display Name (Required)
+- Full Name & Contact Numbers (Required)
+- Civil Status (Married) & Gender (Male)
+- Email, Address & Temporary Address
+          `,
+        image: projectAssets.payroll_management.employee_registration_dark,
       },
       {
-        feature: "Faculty Intervention Queue",
+        feature: "Salary Calculation & Paysheet Generation",
         description:
-          "Instructors receive prioritized intervention alerts for at-risk learners with contextual data for quick mentoring actions.",
-        image: "/images/services/mobile.png",
+          `
+      A complete payroll management interface that combines a high-level summary with detailed employee salary breakdowns. The top section shows key metrics like total employees, net and gross salaries, EFT, EPF (total and employee 12%), advances, welfare, OT, and late values. The lower section provides a detailed employee table showing each person's basic salary, incentives, OT hours, OT amount, gross salary, EPF, advance, late hours, rate, and per — all in one place for easy payroll processing.
+     - Total Employees, Net & Gross Salaries
+- Total EFT & Total EPF (Overall & Employee 12%)
+- Total Advance & Total Welfare
+- Total OT & Total Late (Count & Value)
+- Month Filter & Process Payroll
+- View Action, Download Paysheet & Export CSV Options
+      `,
+        images: [
+          projectAssets.payroll_management.paysheet1,
+          projectAssets.payroll_management.paysheet2,
+        ],
+      },
+      {
+        feature: "Leave Management",
+        description:
+          `
+         A clean leave management interface for manually managing employee leave allocations and usage. It includes search filters by employee name and leave category, a year dropdown, and a reset button. The table shows employee name, leave category, year, total leaves, used leaves, remaining leaves, utilization percentage, and actions.
+                  - Search by Employee Name & Category
+- Year Filter & Reset Button
+- Sortable Columns (Year, Total Leaves, Used Leaves, Remaining)
+- Employee Name, Leave Category & Year
+- Total Leaves, Used Leaves & Remaining
+- Utilization Percentage
+- Actions Button
+- Add Leave Balance Button
+          `,
+        images: [
+          projectAssets.payroll_management.leave1,
+          projectAssets.payroll_management.leave2,
+        ],
+        fit: "contain",
       },
     ] satisfies ProjectSection[],
   },
   {
-    id: "estateview",
-    title: "EstateView",
-    category: "Real Estate",
-    image: projectAssets.estateview.image,
-    galleryImage: projectAssets.estateview.galleryImage,
-    description: "Virtual tour platform for luxury real estate listings.",
-    tags: ["Three.js", "Vue", "Firebase"],
+    id: "customer_relationship_management",
+    title: "customer relationship management",
+    category: "CRM",
+    image: projectAssets.customer_relationship_management.image,
+    cardImage: projectAssets.customer_relationship_management.cardImage,
+    galleryImage: projectAssets.customer_relationship_management.galleryImage,
+    description: "This website is a secure platform designed exclusively for doctors. After registering, doctors can log in to browse products uploaded by the administrator. They can request products directly, eliminating the need for intermediaries. Once approved by the admin, they can place orders normally. This simplifies the procurement process for doctors, making it more efficient.",
+    tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
     link: "https://example.com",
-    longDescription:
-      "EstateView offers immersive 3D virtual tours for high-end real estate. It allows potential buyers to walk through properties from anywhere in the world, with high-fidelity graphics.",
-    challenge:
-      "Rendering high-quality 3D tours in the browser without requiring heavy downloads.",
-    solution:
-      "We used Three.js for efficient 3D rendering and implemented aggressive asset optimization and lazy loading. Firebase handles real-time collaboration during guided tours.",
     sections: [
       {
-        feature: "Portfolio Dashboard",
+        feature: "Lead Registration",
         description:
-          "Real-estate teams can manage listings, engagement trends, and lead activity from one visual operations panel.",
-        image: projectAssets.estateview.image,
+          `
+         A clean lead registration interface for capturing customer identity, location, workflow routing, and service requirements. It includes fields for full name, mobile, email, street address, city, postal code, source, status, and lead setup summary with pending details.
+        - Customer Identity (Full Name, Mobile, Email)
+- Location (Street Address, City, Postal Code)
+- Workflow Routing (Source, Status)
+- Lead Setup Summary (Pending Details, Target Organizations, Active Requirements)
+- Target Organization & Lead Type Dropdowns
+- Service Requirements (Service, Priority)
+- Add Service Button
+          
+          `,
+        images: [
+          projectAssets.customer_relationship_management.leads_management1,
+          projectAssets.customer_relationship_management.leads_management2,
+          projectAssets.customer_relationship_management.leads_management3,
+          projectAssets.customer_relationship_management.leads_management4,
+        ],
+        fit: "contain",
       },
       {
-        feature: "Tour Performance Insights",
+        feature: "Leave Management",
         description:
-          "Day-wise behavior charts reveal where prospects spend time inside tours, helping agents optimize storytelling paths.",
-        image: projectAssets.estateview.galleryImage,
-      },
-      {
-        feature: "Guided Session Toolkit",
-        description:
-          "Live co-browsing controls support guided visits, annotations, and synchronized walkthroughs for remote clients.",
-        image: "/images/services/web.png",
-      },
-    ] satisfies ProjectSection[],
-  },
-  {
-    id: "travelmate",
-    title: "TravelMate",
-    category: "Travel",
-    image: projectAssets.travelmate.image,
-    galleryImage: projectAssets.travelmate.galleryImage,
-    description: "All-in-one travel companion app for customized itineraries.",
-    tags: ["Flutter", "Dart", "Google Maps API"],
-    link: "https://example.com",
-    longDescription:
-      "TravelMate helps travelers plan their perfect trip. It generates custom itineraries based on interests, budget, and duration, and offers offline maps and navigation.",
-    challenge:
-      "Providing reliable functionality in areas with poor internet connectivity.",
-    solution:
-      "We built the app using Flutter for cross-platform performance and implemented a robust offline-first architecture using local databases that sync when online.",
-    sections: [
-      {
-        feature: "Trip Admin Console",
-        description:
-          "Operations teams can curate itineraries, destination packs, and seasonal updates through a structured content dashboard.",
-        image: projectAssets.travelmate.image,
-      },
-      {
-        feature: "Usage Intelligence",
-        description:
-          "The analytics layer tracks route interactions and feature adoption, enabling data-driven product improvements.",
-        image: projectAssets.travelmate.galleryImage,
+          "",
+        image: projectAssets.customer_relationship_management.leads_management4,
       },
       {
         feature: "Offline Sync Controls",
@@ -395,3 +712,5 @@ export const projects = [
     ] satisfies ProjectSection[],
   },
 ];
+
+export type { Project, ProjectSection };

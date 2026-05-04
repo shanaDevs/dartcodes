@@ -11,7 +11,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
-import { projects } from "@/data/projects";
+import { projects, type Project } from "@/data/projects";
 
 const allCategories = [
   "All",
