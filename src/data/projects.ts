@@ -1,3 +1,5 @@
+import { services } from "./services";
+
 const projectAssets = {
   salonManagement1: {
     image: "/images/projects/salon/admin_dashboard.png",
@@ -23,7 +25,38 @@ const projectAssets = {
     tax_customer_dashboard: "/images/projects/corporate_ecosystem/darkmode_taxCustomer.png",
     tax_customer_return: "/images/projects/corporate_ecosystem/tax_customer_return.jpg",
     tax_customer_registration: "/images/projects/corporate_ecosystem/tax_customer_registration.jpg",
+    business_regi1: "/images/projects/corporate_ecosystem/business_registration1.png",
+    business_regi2: "/images/projects/corporate_ecosystem/business_registration2.png",
+    business_regi3: "/images/projects/corporate_ecosystem/business_registration3.png",
+    business_regi4: "/images/projects/corporate_ecosystem/business_registration4.png",
+    br_review_admin: "/images/projects/corporate_ecosystem/br_review_admin.png",
+    admin_dashboard_light: "/images/projects/corporate_ecosystem/admin_dashboard_light.png",
+    admin_dashboard_dark: "/images/projects/corporate_ecosystem/admin_dashboard_dark.png",
+    document1: "/images/projects/corporate_ecosystem/document1.png",
+    document2: "/images/projects/corporate_ecosystem/document2.png",
+    after_services: "/images/projects/corporate_ecosystem/after_services.png",
+    after_services_admin: "/images/projects/corporate_ecosystem/after_services_admin.png",
+    br_customer_dash: "/images/projects/corporate_ecosystem/br_customer_dash.png",
+    br_customer_dash2: "/images/projects/corporate_ecosystem/br_customer_dash2.png",
   },
+  tax_registration: {
+    image: "/images/projects/tax_management/tax_management.png",
+    cardImage: "/images/projects/tax_management/tax_management.png",
+    galleryImage: "/images/projects/tax_management/tax_management.png",
+    tax_registration1: "/images/projects/tax_management/tax_registration1.png",
+    tax_registration2: "/images/projects/tax_management/tax_registration2.png",
+    tax_registration_admin1: "/images/projects/tax_management/tax_registration_admin1.png",
+    tax_registration_admin2: "/images/projects/tax_management/tax_registration_admin2.png",
+    tax_registration_admin3: "/images/projects/tax_management/tax_registration_admin03.png",
+    tax_registration5: "/images/projects/tax_management/tax_registration5.png",
+    coporate1: "/images/projects/tax_management/coporate1.png",
+    coporate2: "/images/projects/tax_management/coporate2.png",
+    coporate3: "/images/projects/tax_management/coporate3.png",
+    partnership1: "/images/projects/tax_management/partnership1.png",
+    partnership2: "/images/projects/tax_management/partnership2.png",
+    partnership3: "/images/projects/tax_management/partnership3.png",
+  },
+
   wettapharma: {
     image: "/images/projects/wettapharma/wettapharma.jpg",
     cardImage: "/images/projects/wettapharma/wettapharma.png",
@@ -75,11 +108,75 @@ const projectAssets = {
     image: "/images/projects/MN_CRM/crm.png",
     galleryImage: "/images/projects/MN_CRM/crm.png",
     cardImage: "/images/projects/MN_CRM/crm.png",
+    dashboard1: "/images/projects/MN_CRM/dashboard1.png",
+    dashboard2: "/images/projects/MN_CRM/dashboard2.png",
+    dashboard3: "/images/projects/MN_CRM/dashboard3.png",
+    dashboard4: "/images/projects/MN_CRM/dashboard4.png",
+    task_management1: "/images/projects/MN_CRM/task_management1.png",
+    task_management2: "/images/projects/MN_CRM/task_management2.png",
     leads_management1: "/images/projects/MN_CRM/CRM1.png",
     leads_management2: "/images/projects/MN_CRM/CRM2.png",
     leads_management3: "/images/projects/MN_CRM/CRM03.jpeg",
     leads_management4: "/images/projects/MN_CRM/CRM4.png",
+    services_management1: "/images/projects/MN_CRM/service_management1.png",
+    services_management2: "/images/projects/MN_CRM/service_management2.png",
   },
+  OxygenPOS: {
+    image: "/images/projects/OxygenPOS/OxygenPOS.png",
+    galleryImage: "/images/projects/OxygenPOS/OxygenPOS.png",
+    cardImage: "/images/projects/OxygenPOS/OxygenPOS.png",
+    Oxygen_dash1: "/images/projects/OxygenPOS/oxygenDash1.png",
+    Oxygen_dash2: "/images/projects/OxygenPOS/oxygenDash2.png",
+    Oxygen_dash3: "/images/projects/OxygenPOS/oxygenDash3.png",
+    Customers1: "/images/projects/OxygenPOS/customer1.png",
+    Customers2: "/images/projects/OxygenPOS/customer2.png",
+    Customers3: "/images/projects/OxygenPOS/customer3.png",
+    return_management1: "/images/projects/OxygenPOS/return_bottles.png",
+    task_mangement1: "/images/projects/OxygenPOS/TaskManagement1.png",
+    task_mangement2: "/images/projects/OxygenPOS/TaskManagement2.png",
+    task_mangement3: "/images/projects/OxygenPOS/TaskManagement3.png",
+    bottle_management1: "/images/projects/OxygenPOS/bottle1.png",
+    bottle_management2: "/images/projects/OxygenPOS/bottle2.png",
+    bottle_management3: "/images/projects/OxygenPOS/bottle3.png",
+    quick_sale: "/images/projects/OxygenPOS/quick_sale.png",
+  },
+  primus_distributor: {
+    image: "/images/projects/primus_distributor/primus_distributor.png",
+    galleryImage: "/images/projects/primus_distributor/primus_distributor.png",
+    cardImage: "/images/projects/primus_distributor/primus_distributor.png",
+    primus_distributor_dash1: "/images/projects/primus_distributor/primus_distributor_dash1.png",
+    primus_distributor_dash2: "/images/projects/primus_distributor/primus_distributor_dash2.png",
+    POS_Interface1: "/images/projects/primus_distributor/POS_Interface1.png",
+    POS_Interface2: "/images/projects/primus_distributor/POS_Interface2.png",
+    GRN1: "/images/projects/primus_distributor/GRN1.png",
+    GRN2: "/images/projects/primus_distributor/GRN2.png",
+    GRN3: "/images/projects/primus_distributor/GRN3.png",
+    GRN4: "/images/projects/primus_distributor/GRN4.png",
+    product1: "/images/projects/primus_distributor/product1.png",
+    product2: "/images/projects/primus_distributor/product2.png",
+    product3: "/images/projects/primus_distributor/product3.png",
+    inventory: "/images/projects/primus_distributor/inventory.png",
+    finance1: "/images/projects/primus_distributor/finance1.png",
+    finance2: "/images/projects/primus_distributor/finance2.png",
+    expenses: "/images/projects/primus_distributor/expenses.png",
+  },
+
+  fireink: {
+    image: "/images/projects/fireink/fireInk.png",
+    galleryImage: "/images/projects/fireink/fireInk.png",
+    cardImage: "/images/projects/fireink/fireInk.png",
+    home1: "/images/projects/fireink/home1.png",
+    home2: "/images/projects/fireink/home2.png",
+    home3: "/images/projects/fireink/home3.png",
+    home4: "/images/projects/fireink/home4.png",
+    services1: "/images/projects/fireink/services1.png",
+    services2: "/images/projects/fireink/services2.png",
+    work1: "/images/projects/fireink/our_work1.png",
+    work2: "/images/projects/fireink/our_work2.png",
+  }
+
+
+
 } as const;
 
 type ProjectSection = {
@@ -250,16 +347,65 @@ A clean, high-functioning employee management interface that balances visual cla
     link: "https://example.com",
     sections: [
       {
-        feature: "Admin Dashboard",
+        feature: "Business Registration Flow",
         description:
           `
-          A clean, professional dashboard for administrators to monitor key business metrics at a glance. It uses a simple stats row and sidebar layout, making it easy to track revenue, registrations, and recent system activity all in one place.
-- Clean Stats Cards
-- Revenue & Customer Summary
-- Registration Status Tracker
-- Recent Activity Log (Logins, Updates, etc.)
+         The business registration interface provides a structured, step-by-step process designed to allow customers to register a new company in minutes. The system uses a clear progress tracker to guide users through six distinct stages: Name Search, Personal Info, Company Info, Documents, Review, and Submission.
+
+- Real-time Company Name Validation
+- Comprehensive Company Structuring
+- Automated Fee Calculation
+- Structured Personal Data Collection
+- Digital Document Management
+- Application Tracking & Confirmation
           `,
-        image: projectAssets.corporate_ecosystem.admin_dashboard,
+        images: [
+          projectAssets.corporate_ecosystem.business_regi1,
+          projectAssets.corporate_ecosystem.business_regi2,
+          projectAssets.corporate_ecosystem.business_regi3,
+          projectAssets.corporate_ecosystem.business_regi4,
+        ],
+        fit: "contain",
+      },
+      {
+        feature: "Integrated Billing & Quotation System",
+        description:
+          `
+       
+          The system provides professional, automated financial documents to customers during the registration workflow. These documents ensure transparency by clearly outlining service packages, company structures, and payment balances.
+
+- Automated Quotation Generation
+- Service Package Breakdown
+- Company Structure Summary
+- Comprehensive Customer & Company Profiles
+- Real-time Payment Tracking
+- Dynamic Balance Calculation
+          `,
+        images: [
+          projectAssets.corporate_ecosystem.document1,
+          projectAssets.corporate_ecosystem.document2,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Admin Dashboard Overview",
+        description:
+          `
+          The Admin Dashboard provides a centralized command center for administrators to monitor the health and activity of the registration platform. It features real-time analytics and high-level summaries of financial, user, and application metrics to facilitate informed decision-making.
+
+- Financial & User Summaries
+- Revenue Analytics
+- Live Application Status Tracking
+- Real-time Activity Feed
+- Comprehensive Management Sidebar
+- Flexible Timeframe Filtering
+          `,
+        images: [
+          projectAssets.corporate_ecosystem.admin_dashboard_light,
+          projectAssets.corporate_ecosystem.admin_dashboard_dark,
+        ],
+        fit: "contain",
       },
       {
         feature: "Admin Business Registration",
@@ -274,18 +420,167 @@ A clean, high-functioning employee management interface that balances visual cla
 
         image: projectAssets.corporate_ecosystem.business_registration,
       },
+
       {
-        feature: "Admin Tax Registration",
+        feature: "Admin Business Registration Review Panel",
         description:
           `
-           A clean, well-organized table that helps admins manage all tax registration requests. It shows customer details, tax type, TIN number, and status at a glance—making it easy to track who's registered and who's still pending.
-- Clean Table Layout with Icons
-- Customer & Tax Type Overview
-- Color-Coded Status (Completed, Pending, etc.)
-- Smart Search (Name, Email, NIC, TIN) & Filters
+         The Admin panel provides a centralized interface for super administrators to verify, manage, and approve company registration applications. It offers a comprehensive view of all data submitted by the customer, ensuring that every detail is audited before final approval.
+
+- Application Lifecycle Management
+- Centralized Company Information
+- Document Verification Workflow
+- Direct Customer Communication
+- Member & Role Auditing
+- Administrative Document Handling
+          `,
+        images: [
+          projectAssets.corporate_ecosystem.br_review_admin,
+        ],
+        fit: "contain",
+      },
+      {
+        feature: "Post-Registration Service Management",
+        description: `
+The platform offers a comprehensive suite of corporate secretarial services that allow companies to manage their legal structure and compliance after initial registration. This module enables seamless communication between the business and the registry for critical organizational changes.
+
+- Diverse Corporate Service Suite
+- Intuitive Service Request Interface
+- Role-Based Data Entry
+- Administrative Service Hub
+- Real-time Request Tracking
+- Company-Specific Request Queues
+Detailed Request Auditing
+        
+        `,
+        images: [
+          projectAssets.corporate_ecosystem.after_services,
+          projectAssets.corporate_ecosystem.after_services_admin,
+
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Customer Dashboard Overview",
+        description: `
+        
+The customer dashboard serves as a central hub for business owners to manage their corporate profile and track ongoing registration applications. It provides real-time financial summaries and visual progress tracking to ensure the user is always informed of their next steps.
+
+- Real-time Financial Summaries
+- Visual Application Progress Tracker
+- Total Portfolio Management
+- Recent Activity Log
+- Quick Action Shortcuts
+- Integrated Service Navigation
+        `,
+        images: [
+          projectAssets.corporate_ecosystem.br_customer_dash,
+          projectAssets.corporate_ecosystem.br_customer_dash2,
+        ],
+        fit: "contain",
+      }
+
+
+    ] satisfies ProjectSection[],
+  },
+  {
+    id: "tax-management",
+    title: "Tax Management System",
+    category: "Enterprise Solutions",
+    image: projectAssets.tax_registration.image,
+    cardImage: projectAssets.tax_registration.cardImage,
+    galleryImage: projectAssets.tax_registration.galleryImage,
+    description: "This platform facilitates business registration, allows requesting tax numbers, and provides access to tax details. It makes the registration process more efficient and transparent, while centralizing tax related information for easy access.",
+    tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
+    link: "https://example.com",
+    sections: [
+      {
+        feature: "Individual Tax Registration (Customer Side)",
+        description:
+          `
+This module provides a comprehensive digital onboarding process for individuals to register for tax purposes. It features a structured, multi-step data entry system designed to collect all necessary legal, residential, and professional information required for the issuance of a Taxpayer Identification Number (TIN).
+
+- Comprehensive Data Collection
+- Secure Document Upload Portal
+- Real-time Progress & Status Monitoring
+- Direct Administrative Integration
           `,
 
-        image: projectAssets.corporate_ecosystem.tax_registration,
+        images: [
+          projectAssets.tax_registration.tax_registration1,
+          projectAssets.tax_registration.tax_registration2,
+          projectAssets.tax_registration.tax_registration5,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Corporate Tax Registration (Customer Side)",
+        description:
+          `
+This module allows business entities to initiate and manage their tax registration process through a dedicated digital portal. It provides a guided workflow for selecting tax types, uploading legal documents, and tracking the status of their Taxpayer Identification Number (TIN) issuance.
+
+- Guided Document Upload Workflow
+- Required Documents
+- Optional Documents
+- Real-time Registration Tracking
+- Digital Document Vault
+- Centralized Tax Dashboard
+          `,
+
+        images: [
+          projectAssets.tax_registration.coporate1,
+          projectAssets.tax_registration.coporate2,
+          projectAssets.tax_registration.coporate3,
+        ],
+        fit: "contain",
+      },
+
+
+      {
+        feature: "Partnership Tax Registration (Customer Side)",
+        description:
+          `
+This module facilitates the tax registration process for business partnerships and joint ventures. It provides a structured digital workflow for uploading foundational business documents and tracking the official issuance of the partnership's Taxpayer Identification Number (TIN).
+
+- Partnership Document Upload Interface
+- Dynamic File Management
+- Expandable Document List
+- Real-time Registration Identity Tracking
+- Audit-Ready Personal Records
+- Historical Document Vault
+          `,
+
+        images: [
+          projectAssets.tax_registration.partnership1,
+          projectAssets.tax_registration.partnership2,
+          projectAssets.tax_registration.partnership3,
+        ],
+        fit: "contain",
+      },
+
+
+      {
+        feature: "Admin Tax Registration Review Panel",
+        description:
+          `
+          This interface provides a unified command center for super administrators to verify and process tax applications for Individuals, Companies (Corporate), and Partnerships. It features a standardized workflow to audit submitted data and legal documents before officially issuing a Taxpayer Identification Number (TIN).
+
+- Tax Type Classification
+- Centralized TIN Management
+- Decision Control Center
+- Type-Specific Document Auditing
+- Comprehensive Data Tables
+- Administrative Supplemental Tools
+          `,
+
+        images:[
+          projectAssets.tax_registration.tax_registration_admin1,
+          projectAssets.tax_registration.tax_registration_admin2,
+          projectAssets.tax_registration.tax_registration_admin3,
+        ], 
+        fit: "contain",
       },
       {
         feature: "Admin Tax Return",
@@ -327,22 +622,25 @@ A clean, high-functioning employee management interface that balances visual cla
 
         image: projectAssets.corporate_ecosystem.tax_customer_return,
       },
-      {
-        feature: "Customer Tax Registration",
-        description:
-          `
-       A simple card layout that helps customers track their tax registration progress step by step. It shows exactly which stage they're on—from submission to completion—so there's no confusion about what's left to do.
+//       {
+//         feature: "Customer Tax Registration",
+//         description:
+//           `
+//        A simple card layout that helps customers track their tax registration progress step by step. It shows exactly which stage they're on—from submission to completion—so there's no confusion about what's left to do.
 
-- Easy Step-by-Step Progress Tracker
-- 5 Clear Stages (Submitted → Review → Payment → TIN → Completed)
-- Completion Percentage & Status Badge
-- View All Data" Button for Full Details
-          `,
+// - Easy Step-by-Step Progress Tracker
+// - 5 Clear Stages (Submitted → Review → Payment → TIN → Completed)
+// - Completion Percentage & Status Badge
+// - View All Data" Button for Full Details
+//           `,
 
-        image: projectAssets.corporate_ecosystem.tax_customer_registration,
-      },
+//         image: projectAssets.corporate_ecosystem.tax_customer_registration,
+//       },
+
+
     ] satisfies ProjectSection[],
   },
+
   {
     id: "wettapharma",
     title: "Medical E-commerce",
@@ -676,6 +974,50 @@ A  complete construction project dashboard combining project details, task progr
     link: "https://example.com",
     sections: [
       {
+        feature: "Dashboard & Lead Analytics",
+        description:
+          `
+          The Pre-Construction dashboard provides a high-level command center for tracking project leads and operational performance. It combines real-time lead analytics with task management tools, ensuring that construction projects move seamlessly from the initial inquiry stage through to active planning.
+
+- Real-time Lead Analytics
+- Operational Performance Metrics
+- Integrated Task Aging Matrix
+- Centralized Lead Repository
+- Automated Attention Alerts
+- Top Performer Leaderboard
+          `,
+        images: [
+          projectAssets.customer_relationship_management.dashboard1,
+          projectAssets.customer_relationship_management.dashboard2,
+          projectAssets.customer_relationship_management.dashboard3,
+          projectAssets.customer_relationship_management.dashboard4,
+        ],
+        fit: "contain",
+
+      },
+
+      {
+        feature: "Dynamic Task & Workflow Management",
+        description:
+          `
+       The Task Management interface serves as a centralized hub for overseeing and coordinating organizational workflows. It utilizes real-time data visualization to provide managers with a clear understanding of task health, team velocity, and operational bottlenecks.
+
+- Workflow Status Summaries
+- Real-time Intelligence Feed
+- Health & Efficiency Metrics
+- Detailed Task Execution Cards
+- Timeline & Accountability Tracking
+- Comprehensive Navigation & Actions
+          
+          `,
+        images: [
+          projectAssets.customer_relationship_management.task_management1,
+          projectAssets.customer_relationship_management.task_management2,
+        ],
+        fit: "contain",
+      },
+
+      {
         feature: "Lead Registration",
         description:
           `
@@ -698,17 +1040,371 @@ A  complete construction project dashboard combining project details, task progr
         fit: "contain",
       },
       {
-        feature: "Leave Management",
+        feature: "Centralized Services Management",
         description:
-          "",
-        image: projectAssets.customer_relationship_management.leads_management4,
+          `
+        
+The Services Management interface provides a comprehensive hub for configuring service offerings and lead classifications. It allows administrators to manage a diverse range of construction and design services while monitoring their operational status and workflow efficiency.
+
+- Service Performance Metrics
+- Operational Status Tracking
+- Workflow Classification
+- Detailed Service Profiles
+- Comprehensive Service Catalog
+- Advanced Management Controls
+- Interactive Configuration
+
+          `,
+
+        images: [
+          projectAssets.customer_relationship_management.services_management1,
+          projectAssets.customer_relationship_management.services_management2,
+        ],
+        fit: "contain",
+
+      },
+
+    ] satisfies ProjectSection[],
+  },
+  {
+    id: "OxygenPOS",
+    title: "Oxygen destribution management system",
+    category: "Enterprise Solutions",
+    image: projectAssets.OxygenPOS.image,
+    cardImage: projectAssets.OxygenPOS.cardImage,
+    galleryImage: projectAssets.OxygenPOS.galleryImage,
+    description: "This website is a secure platform designed exclusively for doctors. After registering, doctors can log in to browse products uploaded by the administrator. They can request products directly, eliminating the need for intermediaries. Once approved by the admin, they can place orders normally. This simplifies the procurement process for doctors, making it more efficient.",
+    tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
+    link: "https://example.com",
+    sections: [
+      {
+        feature: "Oxygen POS Dashboard",
+        description:
+          `
+         The OxygenPOS dashboard serves as a centralized command center, offering a high-level overview of your entire refilling operation. It combines real-time hardware monitoring with financial and inventory tracking to ensure seamless business management.
+
+         - Real-Time Resource Monitoring
+         - Dynamic Inventory Management
+         - Financial & Activity Summary
+         - Operational Quick Actions
+         - Comprehensive Audit Logs
+          
+          `,
+        images: [
+          projectAssets.OxygenPOS.Oxygen_dash1,
+          projectAssets.OxygenPOS.Oxygen_dash2,
+          projectAssets.OxygenPOS.Oxygen_dash3,
+        ],
+        fit: "contain",
       },
       {
-        feature: "Offline Sync Controls",
+        feature: "Customer Management",
         description:
-          "Smart sync tools prioritize critical travel data and synchronize seamlessly when connectivity returns.",
-        image: "/images/services/devops.png",
+          `
+          This interface provides a robust system to oversee customer interactions and track the entire lifecycle of your bottle inventory. It ensures that all sales, returns, and outstanding credits are managed with precision to maintain business efficiency.
+
+          -Customer Credit & Loyalty Tracking
+- Individual Bottle Lifecycle History
+- Detailed Transaction & Sales Logs
+- Quick Issuing & Return Workflows
+          `,
+        images: [
+          projectAssets.OxygenPOS.Customers1,
+          projectAssets.OxygenPOS.Customers2,
+          projectAssets.OxygenPOS.Customers3,
+          projectAssets.OxygenPOS.return_management1,
+        ],
+        fit: "contain",
       },
+      {
+        feature: "Advanced Tank & Refill Management",
+        description:
+          `
+          The Tank Management module provides a comprehensive technical overview of your oxygen storage and refilling operations. It ensures maximum uptime by combining real-time hardware telemetry with structured supply chain tracking.
+
+         - Precision Tank Telemetry
+         - Integrated Bottle Filling
+         - Supplier Delivery Tracking
+         - Automated Refill History
+         - Capacity Forecasting
+          `,
+
+        images: [
+          projectAssets.OxygenPOS.task_mangement1,
+          projectAssets.OxygenPOS.task_mangement2,
+          projectAssets.OxygenPOS.task_mangement3,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Comprehensive Bottle Management",
+        description:
+          `
+          The Bottle Management interface provides a high-resolution view of entire cylinder inventory. It is designed to track every unit from arrival to customer delivery, ensuring no asset is lost and every refill is accounted for.
+
+          - Real-Time Inventory Status
+Inventory Categorization by Size
+- Granular Asset Tracking
+- Detailed Fill History Logs
+- Bulk Management Tools
+          `,
+
+        images: [
+          projectAssets.OxygenPOS.bottle_management1,
+          projectAssets.OxygenPOS.bottle_management2,
+          projectAssets.OxygenPOS.bottle_management3,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Efficient Quick Sale Interface",
+        description:
+          `
+         The Quick Sale module is designed for rapid transaction processing, allowing them to issue oxygen bottles and manage payments through a streamlined, single-screen workflow. It ensures high operational speed by minimizing the steps required to complete a sale.
+
+        - Fast Bottle Selection
+        - Serialized Issuing
+        - Flexible Payment Options
+        - Integrated Customer Management
+        - Live Order Summary
+          `,
+
+        image: projectAssets.OxygenPOS.quick_sale,
+        fit: "contain",
+      },
+
+    ] satisfies ProjectSection[],
+  },
+  {
+    id: "primus_distributor",
+    title: "Distribution Management System",
+    category: "Point of Sale System",
+    image: projectAssets.primus_distributor.image,
+    cardImage: projectAssets.primus_distributor.cardImage,
+    galleryImage: projectAssets.primus_distributor.galleryImage,
+    description: "This website is a secure platform designed exclusively for doctors. After registering, doctors can log in to browse products uploaded by the administrator. They can request products directly, eliminating the need for intermediaries. Once approved by the admin, they can place orders normally. This simplifies the procurement process for doctors, making it more efficient.",
+    tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
+    link: "https://example.com",
+    sections: [
+      {
+        feature: "Comprehensive Distributor Analytics Dashboard",
+        description:
+          `
+        The Primus-Distributor dashboard provides a high-level command center for real-time business insights. It transforms complex sales data into actionable metrics, allowing distributors to monitor financial health and inventory flow across multiple locations with ease.
+
+        - Financial Performance Summary
+        - Real-time Sales Trends
+        - Inventory Valuation & Alerts
+        - Product Performance Intelligence
+          
+          `,
+        images: [
+          projectAssets.primus_distributor.primus_distributor_dash1,
+          projectAssets.primus_distributor.primus_distributor_dash2,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Streamlined Point of Sale Interface.",
+        description:
+          `
+        The Grocery POS sales terminal is designed for high-speed transactions and flexibility, allowing operators to manage sales and product returns within a single, unified workflow. The clean layout ensures that essential billing information and payment controls are always accessible to the user.
+
+- Unified Sale & Return Processing
+- Flexible Payment & Discounting
+- Intuitive Checkout Controls
+- Smart Search & Customer Linking
+
+          `,
+        images: [
+          projectAssets.primus_distributor.POS_Interface1,
+          projectAssets.primus_distributor.POS_Interface2,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Advanced Inventory Inwarding (GRN)",
+        description:
+          `
+        The Goods Received Notes (GRN) module provides a systematic way to document and verify all incoming shipments from suppliers. It bridges the gap between procurement and inventory, ensuring that every item added to the stock is tracked with precise cost, batch, and expiration details.
+
+- GRN Creation
+- Comprehensive Item Tracking
+- Batch & Expiry Management
+- Centralized GRN Ledger
+- Instant Documentation & Export
+
+          `,
+        images: [
+          projectAssets.primus_distributor.GRN1,
+          projectAssets.primus_distributor.GRN2,
+          projectAssets.primus_distributor.GRN3,
+          projectAssets.primus_distributor.GRN4,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Product Management",
+        description:
+          `
+        The Products List interface provides a comprehensive overview of the entire product catalog, serving as the central hub for inventory control. It offers powerful sorting, filtering, and modification tools, allowing businesses to manage thousands of SKUs efficiently from a single dashboard.
+
+       - Comprehensive Inventory Overview
+       - Complete Product Lifecycle Actions
+       - Integrated Barcode Generation
+       - QR Code Creation for Data Sharing
+       - Advanced Filtering and Search
+
+          `,
+        images: [
+          projectAssets.primus_distributor.product1,
+          projectAssets.primus_distributor.product2,
+          projectAssets.primus_distributor.product3,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Advanced Inventory Ledger & Movement Tracking.",
+        description:
+          `
+        The Inventory Ledger provides a comprehensive historical record of every stock movement within the system. It serves as a transparent audit trail, allowing businesses to trace exactly how and when stock levels changed due to sales, returns, or new arrivals.
+
+- Total Transaction Summary
+- Granular Movement Logs
+- Precision Quantity Tracking
+- Cost and Pricing Audit
+- Multi-Dimensional Filtering
+          `,
+        image:
+          projectAssets.primus_distributor.inventory
+        ,
+        fit: "contain",
+      },
+
+      {
+        feature: "Real-time Finance Statistics",
+        description:
+          `
+       The Finance Statistics dashboard offers a specialized view of the business's monetary health, focusing on liquidity and operational cash flow. It provides a transparent breakdown of all financial movements, allowing administrators to monitor counter-specific performance and overall profitability in real-time.
+
+- Counter-Specific Financial Tracking
+- Comprehensive Cash-in-Hand Monitoring
+- Detailed Payment Summaries
+- Income by Payment Method
+- Integrated Transaction Ledger
+- Flexible Reporting & Data Export
+          `,
+        images: [
+          projectAssets.primus_distributor.finance1,
+          projectAssets.primus_distributor.finance2
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Comprehensive Expense Tracking and Management",
+        description:
+          `
+       The Expenses interface provides a dedicated dashboard to track and manage all business-related expenditures. It offers a clear visual summary of operational costs, helping businesses maintain financial discipline by monitoring paid and pending obligations in real-time.
+
+       - Financial Overview Summaries
+       - Proactive Budget Alerts
+       - Detailed Expense Records
+       - Categorized Spending Analysis
+       - Efficient Search and Filtering
+       - Data Export and Management
+          `,
+        images: [
+          projectAssets.primus_distributor.expenses
+        ],
+        fit: "contain",
+      },
+
+
+    ] satisfies ProjectSection[],
+  },
+  {
+    id: "fireink",
+    title: "Portfolio Website for Printing Agency",
+    category: "Portfolio",
+    image: projectAssets.fireink.image,
+    cardImage: projectAssets.fireink.cardImage,
+    galleryImage: projectAssets.fireink.galleryImage,
+    description: "This website is a secure platform designed exclusively for doctors. After registering, doctors can log in to browse products uploaded by the administrator. They can request products directly, eliminating the need for intermediaries. Once approved by the admin, they can place orders normally. This simplifies the procurement process for doctors, making it more efficient.",
+    tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
+    link: "https://example.com",
+    sections: [
+      {
+        feature: "Home Page",
+        description:
+          `
+        This platform serves as a comprehensive digital storefront for a premium printing and branding agency. It is designed to showcase a diverse range of services while emphasizing high-quality production and strong corporate partnerships to build client trust.
+          
+        - Diverse Service Portfolio
+- Strategic Partner Showcase
+- High-Fidelity Production Visuals
+- Customer-Centric Value Proposition
+- Accessible Contact Hub
+          `,
+        images: [
+          projectAssets.fireink.home1,
+          projectAssets.fireink.home2,
+          projectAssets.fireink.home3,
+          projectAssets.fireink.home4,
+        ],
+        fit: "contain",
+      },
+      {
+        feature: "Featured Digital Experiences & Services",
+        description:
+          `
+        The Services interface provides an expansive look at the diverse branding and production capabilities offered. By utilizing a categorized grid system, it allows potential clients to easily navigate through various physical and digital branding assets to find solutions tailored to their specific marketing needs.
+
+- Dynamic Service Filtering
+- Large-Scale Signage Solutions
+- Event and Retail Branding
+- Visual Project Portfolio
+- Seamless Communication
+          `,
+        images: [
+          projectAssets.fireink.services1,
+          projectAssets.fireink.services2,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Showcase of Creative Excellence",
+        description:
+          `
+        The "Our Works" interface serves as a comprehensive portfolio, meticulously curated to highlight the agency's versatility in both corporate event branding and artistic interior decor. It functions as a visual testimonial of technical precision and creative design capabilities.
+
+       - Multi-Category Portfolio Layout
+- Precision Signage Fabrication
+- Mobile Advertising Solutions
+- High-Volume Promotional Items
+- Portable Display Systems
+- Dynamic Visual Gallery
+          `,
+        images: [
+          projectAssets.fireink.work1,
+          projectAssets.fireink.work2,
+        ],
+        fit: "contain",
+      },
+
+
+
+
+
+
+
     ] satisfies ProjectSection[],
   },
 ];
