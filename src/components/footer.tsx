@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Twitter, Linkedin, Github, Youtube, Star } from "lucide-react";
 import { useState } from "react";
-import { Zap } from "lucide-react";
+import { Logo } from "@/components/ui/logo";
 
 const footerColumns = [
   {
@@ -57,20 +57,16 @@ export function Footer() {
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent opacity-70" />
 
         <div className="relative z-10 px-5 sm:px-6 md:px-12 lg:px-16 py-10 md:py-16">
-
           {/* MAIN GRID */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
-
             {/* BRAND */}
             <div className="lg:col-span-5 xl:col-span-4">
-              <div className="flex items-center gap-3 mb-4">
-              <div className="bg-gold p-1 rounded-sm text-black">
-                <Zap size={20} fill="currentColor" />
-            </div>
-            <span className="text-foreground">DART<span className="text-gold">CODES</span></span>
+              <div className="mb-4">
+                <Logo />
               </div>
               <p className="text-foreground/60 text-sm leading-relaxed max-w-sm mb-6">
-                Engineering high-performance digital products designed to perform, built to grow, and ready for the future.
+                Engineering high-performance digital products designed to
+                perform, built to grow, and ready for the future.
               </p>
 
               <div className="flex gap-3">
@@ -113,7 +109,6 @@ export function Footer() {
 
           {/* SECOND ROW */}
           <div className="mt-10 pt-8 border-t border-border/60 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-
             <div className="flex flex-wrap items-center gap-2">
               <span className="px-3 py-1 rounded-full bg-foreground/[0.03] border border-border/60 text-xs text-foreground/60 flex items-center gap-1">
                 <Star size={12} className="fill-gold text-gold" />
@@ -141,12 +136,12 @@ export function Footer() {
 
           {/* BOTTOM BAR */}
           <div className="mt-8 pt-6 border-t border-border/60 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-xs text-foreground/50">
-
             <span>
-              © 2026 DartCodes. Made with <span className="text-gold font-bold">♥</span> in Colombo, Sri Lanka
+              © 2026 DartCodes. Made with{" "}
+              <span className="text-gold font-bold">♥</span> in Colombo, Sri
+              Lanka
             </span>
           </div>
-
         </div>
       </div>
     </footer>

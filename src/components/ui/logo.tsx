@@ -33,7 +33,7 @@ export function Logo({ className }: { className?: string }) {
       <img
         src={textSrc}
         alt="DartCodes wordmark"
-        className="hidden sm:block h-8 object-contain"
+        className="block h-7 sm:h-8 object-contain"
       />
     </div>
   );
