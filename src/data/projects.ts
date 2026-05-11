@@ -3,7 +3,7 @@ import { services } from "./services";
 const projectAssets = {
   salonManagement1: {
     image: "/images/projects/salon/admin_dashboard.png",
-    cardImage: "/images/projects/salon/salon_management1.png",
+    cardImage: "/images/projects/salon/salon_management_new.png",
     galleryImage: "/images/projects/salon/empmployee_management1.png",
     cashier_dashboard: "/images/projects/salon/cashierdashboard.png",
     cashier_invoice: "/images/projects/salon/cashier_invoice.png",
@@ -15,9 +15,9 @@ const projectAssets = {
     employee_dashboard: "/images/projects/salon/em_dash.png"
   },
   corporate_ecosystem: {
-    image: "/images/projects/corporate_ecosystem/corporate_ecosystem.png",
-    cardImage: "/images/projects/corporate_ecosystem/corporate_ecosystem.png",
-    galleryImage: "/images/projects/corporate_ecosystem/corporate_ecosystem.png",
+    image: "/images/projects/corporate_ecosystem/corporate_ecosystem_new.png",
+    cardImage: "/images/projects/corporate_ecosystem/corporate_ecosystem_new.png",
+    galleryImage: "/images/projects/corporate_ecosystem/corporate_ecosystem_new.png",
     admin_dashboard: "/images/projects/corporate_ecosystem/admin_dashboard.jpg",
     business_registration: "/images/projects/corporate_ecosystem/business_registration_new.png",
     tax_registration: "/images/projects/corporate_ecosystem/tax_registration.png",
@@ -40,9 +40,9 @@ const projectAssets = {
     br_customer_dash2: "/images/projects/corporate_ecosystem/br_customer_dash2.png",
   },
   tax_registration: {
-    image: "/images/projects/tax_management/tax_management.png",
-    cardImage: "/images/projects/tax_management/tax_management.png",
-    galleryImage: "/images/projects/tax_management/tax_management.png",
+    image: "/images/projects/tax_management/tax_management_new.png",
+    cardImage: "/images/projects/tax_management/tax_management_new.png",
+    galleryImage: "/images/projects/tax_management/tax_management_new.png",
     tax_registration1: "/images/projects/tax_management/tax_registration1.png",
     tax_registration2: "/images/projects/tax_management/tax_registration2.png",
     tax_registration_admin1: "/images/projects/tax_management/tax_registration_admin1.png",
@@ -58,9 +58,9 @@ const projectAssets = {
   },
 
   wettapharma: {
-    image: "/images/projects/wettapharma/wettapharma.jpg",
-    cardImage: "/images/projects/wettapharma/wettapharma.png",
-    galleryImage: "/images/projects/wettapharma/wettapharma.png",
+    image: "/images/projects/wettapharma/wettapharma_new.png",
+    cardImage: "/images/projects/wettapharma/wettapharma_new.png",
+    galleryImage: "/images/projects/wettapharma/wettapharma_new.png",
     admin_dashboard: "/images/projects/wettapharma/wettapharma_admin_dash.png",
     admin_order: "/images/projects/wettapharma/wettapharma_order.png",
     admin_payment: "/images/projects/wettapharma/wettapharma_payments.png",
@@ -75,9 +75,9 @@ const projectAssets = {
     credit_ordering_mobile: "/images/projects/wettapharma/credit_ordering_mobile.png",
   },
   mn_homes: {
-    image: "/images/projects/MN_Homes/mn_group.jpg",
-    cardImage: "/images/projects/MN_Homes/mn_group.jpg",
-    galleryImage: "/images/projects/MN_Homes/mn_group.jpg",
+    image: "/images/projects/MN_Homes/mn_group_new.png",
+    cardImage: "/images/projects/MN_Homes/mn_group_new.png",
+    galleryImage: "/images/projects/MN_Homes/mn_group_new.png",
     workflow_dashboard: "/images/projects/MN_Homes/Screenshot 2026-04-30 160550.png",
     mn_group_project_registry: "/images/projects/MN_Homes/Screenshot 2026-04-30 162947.png",
     project_dark1: "/images/projects/MN_Homes/project_dark1.png",
@@ -94,10 +94,11 @@ const projectAssets = {
     mn_homes_dark: "/images/projects/MN_Homes/Material Items_dark.png",
     mn_homes_light: "/images/projects/MN_Homes/Material Items_light.png"
   },
+
   payroll_management: {
-    image: "/images/projects/MN_payroll_management/payroll_management.png",
-    galleryImage: "/images/projects/MN_payroll_management/payroll_management.png",
-    cardImage: "/images/projects/MN_payroll_management/payroll_management.png",
+    image: "/images/projects/MN_payroll_management/payroll_management_new.png",
+    galleryImage: "/images/projects/MN_payroll_management/payroll_management_new.png",
+    cardImage: "/images/projects/MN_payroll_management/payroll_management_new.png",
     employee_registration_dark: "/images/projects/MN_payroll_management/employee_registration_dark.png",
     paysheet1: "/images/projects/MN_payroll_management/paysheet1.png",
     paysheet2: "/images/projects/MN_payroll_management/paysheet2.png",
@@ -105,9 +106,9 @@ const projectAssets = {
     leave2: "/images/projects/MN_payroll_management/leaves02.png",
   },
   customer_relationship_management: {
-    image: "/images/projects/MN_CRM/crm.png",
-    galleryImage: "/images/projects/MN_CRM/crm.png",
-    cardImage: "/images/projects/MN_CRM/crm.png",
+    image: "/images/projects/MN_CRM/crm_new.png",
+    galleryImage: "/images/projects/MN_CRM/crm_new.png",
+    cardImage: "/images/projects/MN_CRM/crm_new.png",
     dashboard1: "/images/projects/MN_CRM/dashboard1.png",
     dashboard2: "/images/projects/MN_CRM/dashboard2.png",
     dashboard3: "/images/projects/MN_CRM/dashboard3.png",
@@ -122,9 +123,9 @@ const projectAssets = {
     services_management2: "/images/projects/MN_CRM/service_management2.png",
   },
   OxygenPOS: {
-    image: "/images/projects/OxygenPOS/OxygenPOS.png",
-    galleryImage: "/images/projects/OxygenPOS/OxygenPOS.png",
-    cardImage: "/images/projects/OxygenPOS/OxygenPOS.png",
+    image: "/images/projects/OxygenPOS/OxygenPOS_new.png",
+    galleryImage: "/images/projects/OxygenPOS/OxygenPOS_new.png",
+    cardImage: "/images/projects/OxygenPOS/OxygenPOS_new.png",
     Oxygen_dash1: "/images/projects/OxygenPOS/oxygenDash1.png",
     Oxygen_dash2: "/images/projects/OxygenPOS/oxygenDash2.png",
     Oxygen_dash3: "/images/projects/OxygenPOS/oxygenDash3.png",
@@ -141,9 +142,9 @@ const projectAssets = {
     quick_sale: "/images/projects/OxygenPOS/quick_sale.png",
   },
   primus_distributor: {
-    image: "/images/projects/primus_distributor/primus_distributor.png",
-    galleryImage: "/images/projects/primus_distributor/primus_distributor.png",
-    cardImage: "/images/projects/primus_distributor/primus_distributor.png",
+    image: "/images/projects/primus_distributor/primus_distributor_new.png",
+    galleryImage: "/images/projects/primus_distributor/primus_distributor_new.png",
+    cardImage: "/images/projects/primus_distributor/primus_distributor_new.png",
     primus_distributor_dash1: "/images/projects/primus_distributor/primus_distributor_dash1.png",
     primus_distributor_dash2: "/images/projects/primus_distributor/primus_distributor_dash2.png",
     POS_Interface1: "/images/projects/primus_distributor/POS_Interface1.png",
@@ -162,9 +163,9 @@ const projectAssets = {
   },
 
   fireink: {
-    image: "/images/projects/fireink/fireInk.png",
-    galleryImage: "/images/projects/fireink/fireInk.png",
-    cardImage: "/images/projects/fireink/fireInk.png",
+    image: "/images/projects/fireink/fireInk_new1.png",
+    galleryImage: "/images/projects/fireink/fireInk_new1.png",
+    cardImage: "/images/projects/fireink/fireInk_new1.png",
     home1: "/images/projects/fireink/home1.png",
     home2: "/images/projects/fireink/home2.png",
     home3: "/images/projects/fireink/home3.png",
@@ -173,9 +174,83 @@ const projectAssets = {
     services2: "/images/projects/fireink/services2.png",
     work1: "/images/projects/fireink/our_work1.png",
     work2: "/images/projects/fireink/our_work2.png",
-  }
+  },
 
+  employee_app: {
+    image: "/images/projects/employee_app/OperationManagementSystem_new.png",
+    galleryImage: "/images/projects/employee_app/OperationManagementSystem_new.png",
+    cardImage: "/images/projects/employee_app/OperationManagementSystem_new.png",
+    dashboard1: "/images/projects/employee_app/dashboard1.jpeg",
+    dashboard2: "/images/projects/employee_app/dashboard2.jpeg",
+    dashboard3: "/images/projects/employee_app/dashboard3.jpeg",
+    attendance: "/images/projects/employee_app/attendance.jpeg",
+    daliyTask: "/images/projects/employee_app/daliyTask.jpeg",
+    labor_attendance: "/images/projects/employee_app/labor_attendance.jpeg",
+    subcontractors: "/images/projects/employee_app/subcontractors.jpeg",
+    perchaseRequest: "/images/projects/employee_app/purchase_request.jpeg",
+  },
 
+  expense_management: {
+    image: "/images/projects/expense_management/expense_management_new.png",
+    galleryImage: "/images/projects/expense_management/expense_management_new.png",
+    cardImage: "/images/projects/expense_management/expense_management_new.png",
+    dashboard1: "/images/projects/expense_management/dashboard1.png",
+    dashboard2: "/images/projects/expense_management/dashboard2.png",
+    projects1: "/images/projects/expense_management/projects1.png",
+    projects2: "/images/projects/expense_management/projects2.png",
+    AccountantDashboard1: "/images/projects/expense_management/AccountantDashboard1.png",
+    AccountantDashboard2: "/images/projects/expense_management/AccountantDashboard2.png",
+  },
+
+  procument_management: {
+    image: "/images/projects/procument_management/procument_management_new.png",
+    galleryImage: "/images/projects/procument_management/procument_management_new.png",
+    cardImage: "/images/projects/procument_management/procument_management_new.png",
+    dashboard1: "/images/projects/procument_management/dashboard1.png",
+    dashboard2: "/images/projects/procument_management/dashboard2.png",
+    dashboard3: "/images/projects/procument_management/dashboard3.png",
+    procument_request1: "/images/projects/procument_management/procument_request1.png",
+    procument_request2: "/images/projects/procument_management/procument_request2.png",
+    CreateRequest1: "/images/projects/procument_management/CreateRequest1.png",
+    CreateRequest2: "/images/projects/procument_management/CreateRequest2.png",
+    CreateRequest3: "/images/projects/procument_management/CreateRequest3.png",
+    PurchaseOrders1: "/images/projects/procument_management/PurchaseOrders1.png",
+    PurchaseOrders2: "/images/projects/procument_management/PurchaseOrders2.png",
+    PurchaseOrders3: "/images/projects/procument_management/PurchaseOrders3.png",
+    SiteTransactions: "/images/projects/procument_management/SiteTransactions.png",
+    GoodsReceivedNotes1: "/images/projects/procument_management/GoodsReceivedNotes1.png",
+    GoodsReceivedNotes2: "/images/projects/procument_management/GoodsReceivedNotes2.png",
+    history1: "/images/projects/procument_management/history1.png",
+    history2: "/images/projects/procument_management/history2.png",
+    products: "/images/projects/procument_management/products.png",
+    InventoryLedger: "/images/projects/procument_management/InventoryLedger.png",
+    PurchaseOrderPreview: "/images/projects/procument_management/PurchaseOrderPreview.png",
+    transactions: "/images/projects/procument_management/transactions.png",
+    financeStatistics: "/images/projects/procument_management/financeStatistics.png",
+    RentPool1: "/images/projects/procument_management/RentPool1.png",
+    RentPool2: "/images/projects/procument_management/RentPool2.png",
+    RentPool3: "/images/projects/procument_management/RentPool3.png",
+    RentPool4: "/images/projects/procument_management/RentPool4.png",
+    PendingStockReleases: "/images/projects/procument_management/PendingStockReleases.png",
+    StockReleases: "/images/projects/procument_management/StockReleases.png",
+    petty_cash1: "/images/projects/procument_management/petty_cash1.png",
+    petty_cash2: "/images/projects/procument_management/petty_cash2.png",
+    petty_cash3: "/images/projects/procument_management/petty_cash3.png",
+  },
+
+  distribution_management: {
+    image: "/images/projects/distribution_management/distribution_management.png",
+    galleryImage: "/images/projects/distribution_management/distribution_management.png",
+    cardImage: "/images/projects/distribution_management/distribution_management.png",
+    dashboard: "/images/projects/distribution_management/dashboard.png",
+    RefRegistration1: "/images/projects/distribution_management/RefRegistration1.png",
+    RefRegistration2: "/images/projects/distribution_management/RefRegistration2.png",
+    SalesInvoices1: "/images/projects/distribution_management/SalesInvoices1.png",
+    SalesInvoices2: "/images/projects/distribution_management/SalesInvoices2.png",
+    PurchaseOrders1: "/images/projects/distribution_management/PurchaseOrders1.png",
+    PurchaseOrders2: "/images/projects/distribution_management/PurchaseOrders2.png",
+    PurchaseOrders3: "/images/projects/distribution_management/PurchaseOrders3.png",
+  },
 
 } as const;
 
@@ -342,7 +417,7 @@ A clean, high-functioning employee management interface that balances visual cla
     image: projectAssets.corporate_ecosystem.image,
     cardImage: projectAssets.corporate_ecosystem.cardImage,
     galleryImage: projectAssets.corporate_ecosystem.galleryImage,
-    description: "This platform facilitates business registration, allows requesting tax numbers, and provides access to tax details. It makes the registration process more efficient and transparent, while centralizing tax related information for easy access.",
+    description: "Our Corporate Ecosystem manages the complete business journey — from registration and admin review to integrated billing, quotations, and post-registration service management. With dedicated dashboards for both admin and customers, it creates a seamless, transparent digital environment where businesses can register, operate, and grow efficiently.",
     tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
     link: "https://example.com",
     sections: [
@@ -491,7 +566,7 @@ The customer dashboard serves as a central hub for business owners to manage the
     image: projectAssets.tax_registration.image,
     cardImage: projectAssets.tax_registration.cardImage,
     galleryImage: projectAssets.tax_registration.galleryImage,
-    description: "This platform facilitates business registration, allows requesting tax numbers, and provides access to tax details. It makes the registration process more efficient and transparent, while centralizing tax related information for easy access.",
+    description: "Our Tax Management System simplifies tax filing for individuals, corporations, and partnerships. Customers can register and file returns through their own dashboard, while admins review registrations, manage tax returns, and track submissions by year — all in one organized platform.",
     tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
     link: "https://example.com",
     sections: [
@@ -575,11 +650,11 @@ This module facilitates the tax registration process for business partnerships a
 - Administrative Supplemental Tools
           `,
 
-        images:[
+        images: [
           projectAssets.tax_registration.tax_registration_admin1,
           projectAssets.tax_registration.tax_registration_admin2,
           projectAssets.tax_registration.tax_registration_admin3,
-        ], 
+        ],
         fit: "contain",
       },
       {
@@ -622,20 +697,20 @@ This module facilitates the tax registration process for business partnerships a
 
         image: projectAssets.corporate_ecosystem.tax_customer_return,
       },
-//       {
-//         feature: "Customer Tax Registration",
-//         description:
-//           `
-//        A simple card layout that helps customers track their tax registration progress step by step. It shows exactly which stage they're on—from submission to completion—so there's no confusion about what's left to do.
+      //       {
+      //         feature: "Customer Tax Registration",
+      //         description:
+      //           `
+      //        A simple card layout that helps customers track their tax registration progress step by step. It shows exactly which stage they're on—from submission to completion—so there's no confusion about what's left to do.
 
-// - Easy Step-by-Step Progress Tracker
-// - 5 Clear Stages (Submitted → Review → Payment → TIN → Completed)
-// - Completion Percentage & Status Badge
-// - View All Data" Button for Full Details
-//           `,
+      // - Easy Step-by-Step Progress Tracker
+      // - 5 Clear Stages (Submitted → Review → Payment → TIN → Completed)
+      // - Completion Percentage & Status Badge
+      // - View All Data" Button for Full Details
+      //           `,
 
-//         image: projectAssets.corporate_ecosystem.tax_customer_registration,
-//       },
+      //         image: projectAssets.corporate_ecosystem.tax_customer_registration,
+      //       },
 
 
     ] satisfies ProjectSection[],
@@ -774,14 +849,15 @@ A clean, business-focused dashboard designed for the admin to manage bulk medici
       },
     ] satisfies ProjectSection[],
   },
+
   {
     id: "MN_Homes",
-    title: "MN Homes",
+    title: "Workflow Management System",
     category: "Enterprise Solutions",
     image: projectAssets.mn_homes.image,
     cardImage: projectAssets.mn_homes.cardImage,
     galleryImage: projectAssets.mn_homes.galleryImage,
-    description: "This website is a secure platform designed exclusively for doctors. After registering, doctors can log in to browse products uploaded by the administrator. They can request products directly, eliminating the need for intermediaries. Once approved by the admin, they can place orders normally. This simplifies the procurement process for doctors, making it more efficient.",
+    description: "This application operates on a custom-built Workflow Management System that keeps every project on track. From active project dashboards and task progress tracking to petty cash, BOQ, quotations, and material planning, everything is managed in one place. This system helps us deliver work on time, reduce delays, and maintain full transparency across all stages of construction.",
     tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
     link: "https://example.com",
     sections: [
@@ -799,27 +875,46 @@ A clean, business-focused dashboard designed for the admin to manage bulk medici
         image: projectAssets.mn_homes.workflow_dashboard,
         fit: "contain",
       },
+
       {
         feature: "Project Management Dashboard",
         description:
           `
-A  complete construction project dashboard combining project details, task progress, and resource tracking in one view. Admins can monitor stage completion, task status, stock quantities, material requests, and timeline all from one place.
-- Project Status, Timeline & Location
-- Stage Completion Chart (Foundation, Excavations)
-- Task Breakdown with Progress & Status (Done / Due)
-- Stock Items & Material Requests (Pending / Approved)
-- Statistics Chart (March vs April)
-- Total Days, Days Left & Completion Percentage
-- Zoom Options (Daily, Monthly, Quarterly)
-
+A clean construction project dashboard combining project overview, stage completion, task breakdown, quantities, resources, cash requests, and timeline. It helps admins track project progress, stock items, material requests, and stage-wise task status all in one place.
+- Stage Completion Chart (Foundation, Excavations, etc.)
+- Task Breakdown (Overdue vs Planned)
+-  Petty Cash, Stock Items & Estimated Quantity
+- Balance & Used Quantity with Percentage
+- Extra Material Requests (Pending / Approved)
+- Project Duration (Total Days, Days Left, Complete Percentage)
          `,
         images: [
           projectAssets.mn_homes.mn_group_project_registry,
           projectAssets.mn_homes.projects1,
           projectAssets.mn_homes.projects2,
-          projectAssets.mn_homes.projects3,
           projectAssets.mn_homes.project_dark1,
           projectAssets.mn_homes.project_dark2,
+        ],
+        fit: "contain",
+      },
+
+
+      {
+        feature: "Stage & Task Progress",
+        description:
+          `
+A clean task tracking interface showing stage-wise progress with individual task percentages, status labels, and duration days. It includes a timeline zoom option, progress summary stats, and a calendar view for date tracking.
+- Stage Progress Summary
+- Total Tasks, Done & Due Counters
+- Stage-wise Task List (Foundation, Excavations, etc.)
+- Individual Task Progress Percentages
+- Task Duration in Days
+- Calendar View with Dates
+
+
+         `,
+        images: [
+          projectAssets.mn_homes.projects3,
           projectAssets.mn_homes.project_dark3,
         ],
         fit: "contain",
@@ -844,23 +939,6 @@ A  complete construction project dashboard combining project details, task progr
           projectAssets.mn_homes.workflow_dark,
         ],
         fit: "contain",
-      },
-
-
-      {
-        feature: "Petty Cash",
-        description:
-          `
-      A clean petty cash tracking interface for construction projects. It shows total received, total spent, and current balance at the top, followed by two separate tables — one for petty cash requests and one for petty cash reimbursements.
-      - Total Received, Total Spent & Current Balance
-- Petty Cash Requests Table (Date, Request ID, Description, Status, Request Amount, Approve Amount, Remark)
-- Petty Cash Reimbursements Table (Date, Request ID, Approved Amount, Expense Amount, Balance Amount, Receipts, Remark)
-
-
-         `,
-        image:
-          projectAssets.mn_homes.petty_cash
-
       },
 
       {
@@ -905,7 +983,7 @@ A  complete construction project dashboard combining project details, task progr
     image: projectAssets.payroll_management.image,
     cardImage: projectAssets.payroll_management.cardImage,
     galleryImage: projectAssets.payroll_management.galleryImage,
-    description: "This website is a secure platform designed exclusively for doctors. After registering, doctors can log in to browse products uploaded by the administrator. They can request products directly, eliminating the need for intermediaries. Once approved by the admin, they can place orders normally. This simplifies the procurement process for doctors, making it more efficient.",
+    description: "Our Payroll Management System simplifies employee administration by handling everything from registration and salary calculations to paysheet generation and leave management. It ensures accurate, timely payments and transparent record-keeping for our entire construction team.",
     tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
     link: "https://example.com",
     sections: [
@@ -962,14 +1040,15 @@ A  complete construction project dashboard combining project details, task progr
       },
     ] satisfies ProjectSection[],
   },
+
   {
     id: "customer_relationship_management",
-    title: "customer relationship management",
+    title: "Customer relationship management",
     category: "CRM",
     image: projectAssets.customer_relationship_management.image,
     cardImage: projectAssets.customer_relationship_management.cardImage,
     galleryImage: projectAssets.customer_relationship_management.galleryImage,
-    description: "This website is a secure platform designed exclusively for doctors. After registering, doctors can log in to browse products uploaded by the administrator. They can request products directly, eliminating the need for intermediaries. Once approved by the admin, they can place orders normally. This simplifies the procurement process for doctors, making it more efficient.",
+    description: "Our CRM system helps us manage every customer interaction smoothly — from lead registration and service management to dynamic task tracking and workflow handling. With real-time lead analytics and a centralized dashboard, we respond faster, stay organized, and keep every client experience seamless from start to finish.",
     tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
     link: "https://example.com",
     sections: [
@@ -1068,12 +1147,12 @@ The Services Management interface provides a comprehensive hub for configuring s
   },
   {
     id: "OxygenPOS",
-    title: "Oxygen destribution management system",
+    title: "Oxygen distribution management system",
     category: "Enterprise Solutions",
     image: projectAssets.OxygenPOS.image,
     cardImage: projectAssets.OxygenPOS.cardImage,
     galleryImage: projectAssets.OxygenPOS.galleryImage,
-    description: "This website is a secure platform designed exclusively for doctors. After registering, doctors can log in to browse products uploaded by the administrator. They can request products directly, eliminating the need for intermediaries. Once approved by the admin, they can place orders normally. This simplifies the procurement process for doctors, making it more efficient.",
+    description: "Our Oxygen Distribution Management System streamlines the entire gas delivery process — from customer management and quick sale interfaces to advanced tank, refill, and bottle management. The POS dashboard gives us real-time control over inventory, customer records, and daily sales, ensuring safe, efficient, and hassle-free oxygen distribution.",
     tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
     link: "https://example.com",
     sections: [
@@ -1179,12 +1258,12 @@ Inventory Categorization by Size
   },
   {
     id: "primus_distributor",
-    title: "Distribution Management System",
-    category: "Point of Sale System",
+    title: "Point of Sale System",
+    category: "POS System",
     image: projectAssets.primus_distributor.image,
     cardImage: projectAssets.primus_distributor.cardImage,
     galleryImage: projectAssets.primus_distributor.galleryImage,
-    description: "This website is a secure platform designed exclusively for doctors. After registering, doctors can log in to browse products uploaded by the administrator. They can request products directly, eliminating the need for intermediaries. Once approved by the admin, they can place orders normally. This simplifies the procurement process for doctors, making it more efficient.",
+    description: "Our Point of Sale System gives you full control over your retail operations — from a powerful distributor analytics dashboard and streamlined POS interface to advanced inventory management with GRN, product tracking, and real-time movement updates. It also tracks financial statistics and expenses in real time, helping you run your business smarter and more profitably.",
     tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
     link: "https://example.com",
     sections: [
@@ -1336,7 +1415,7 @@ Inventory Categorization by Size
     image: projectAssets.fireink.image,
     cardImage: projectAssets.fireink.cardImage,
     galleryImage: projectAssets.fireink.galleryImage,
-    description: "This website is a secure platform designed exclusively for doctors. After registering, doctors can log in to browse products uploaded by the administrator. They can request products directly, eliminating the need for intermediaries. Once approved by the admin, they can place orders normally. This simplifies the procurement process for doctors, making it more efficient.",
+    description: "Our Printing Agency Portfolio Website showcases creative excellence through a clean home page and featured digital experiences. It highlights the best of our printing and design work, helping potential clients see what we can do — quickly, clearly, and impressively.",
     tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
     link: "https://example.com",
     sections: [
@@ -1403,6 +1482,694 @@ Inventory Categorization by Size
 
 
 
+
+
+    ] satisfies ProjectSection[],
+  },
+
+  {
+    id: "employee_app",
+    title: "Operation Management System",
+    category: "Enterprise Solutions",
+    image: projectAssets.employee_app.image,
+    cardImage: projectAssets.employee_app.cardImage,
+    galleryImage: projectAssets.employee_app.galleryImage,
+    description: "Our Operation Management System keeps daily site activities organized — from attendance tracking and labor management to daily task updates and subcontractor coordination. With a clear dashboard overview and purchase request handling, it ensures every operational detail on the ground is monitored and managed efficiently.",
+    tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
+    link: "https://example.com",
+    sections: [
+      {
+        feature: "Dashboard & Attendance Overview",
+        description:
+          `
+        This is an employee self-service attendance dashboard for daily work tracking. It allows clock in/out, viewing pending requests, and checking weekly attendance scores. Leave balances, attendance trends, and upcoming actions (e.g., missing check-out) are shown.Recent request histories with approval statuses are also displayed at a glance.
+
+- Dashboard Summary
+- Attendance Actions
+- Attendance Trends
+- Request Status Mix
+- Employee Snapshot
+- Upcoming Actions & Recent Requests
+          `,
+        images: [
+          projectAssets.employee_app.dashboard1,
+          projectAssets.employee_app.dashboard2,
+          projectAssets.employee_app.dashboard3,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Attendance",
+        description:
+          `
+        This is a Manual Attendance & Request Management interface. Unlike a simple punch clock, this screen allows employees to submit, track, and correct their attendance records. It provides a searchable, filterable history log (table or calendar view) where users can monitor the approval status of their clock-ins and clock-outs.
+
+        - Manual Attendance Submission
+- Advanced Request Search & Filtering
+- Flexible Data Visualization
+- Detailed Request History Table
+          `,
+        images: [
+          projectAssets.employee_app.attendance,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Daily Site Task Update",
+        description:
+          `
+        This is a Daily Site Task Update interface designed for construction or project field teams. Instead of tracking attendance or office requests, this screen helps users monitor and report progress on active site stages (e.g., Preliminary Work). It shows how many tasks are tracked, how many stages are active, and allows workers to update task quantities, record material usage, and automatically update completion progress.
+- Site & Project Header
+- Summary Metrics (Top Cards)
+- Stage & Task Selection
+- Task Breakdown per Stage
+- Progress Update Mechanism
+          `,
+        images: [
+          projectAssets.employee_app.daliyTask,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Labor & Site Attendance Management",
+        description:
+          `
+        This is a Labor & Site Attendance Management interface for field supervisors or site managers. Instead of tracking employee self-attendance (like earlier dashboards), this screen helps managers track daily labor availability, mark check-in/out, monitor overtime, and view advance payment history for workers across different sites.
+- Labor Attendance Dashboard
+- Site Attendance Table
+- Advance Payment History
+          `,
+        images: [
+          projectAssets.employee_app.labor_attendance,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Subcontractors",
+        description:
+          `
+        This is a Subcontractor Management interface for site managers or project coordinators. Instead of tracking individual laborers or employee attendance, this screen helps managers view available subcontractors, assign them to sites, track advance payments, and monitor assignment history — all in one place.
+-  Available Pool (Subcontractor Directory)
+- Assigned To My Sites
+- Advance Payments (Subcontractor)
+- Assignment History
+
+          `,
+        images: [
+          projectAssets.employee_app.subcontractors,
+        ],
+        fit: "contain",
+      },
+      {
+        feature: "Purchase Request",
+        description:
+          `
+        This is a Purchase Request interface for site managers or project staff. Instead of tracking attendance or subcontractors, this screen allows users to create and submit purchase requests for materials or services needed at a specific site. It includes delivery details, item selection, priority settings, and a history log of recent requests with their approval statuses.
+
+        - Delivery Details Section
+        - Items Needed Section
+        - Submit Action
+        - Recent Requests History
+          `,
+        images: [
+          projectAssets.employee_app.perchaseRequest,
+        ],
+        fit: "contain",
+      }
+
+
+
+
+
+    ] satisfies ProjectSection[],
+  },
+
+  {
+    id: "expense_management",
+    title: "Expense Management System",
+    category: "Enterprise Solutions",
+    image: projectAssets.expense_management.image,
+    cardImage: projectAssets.expense_management.cardImage,
+    galleryImage: projectAssets.expense_management.galleryImage,
+    description: "Our Expenses Management System keeps every project cost under control — from an admin dashboard and project-wise expense tracking to a dedicated accountant dashboard. It gives you a clear view of where money is going, helps prevent budget overruns, and makes financial oversight simple and transparent.",
+    tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
+    link: "https://example.com",
+    sections: [
+      {
+        feature: "Admin Dashboard",
+        description:
+          `
+  A real-time expense tracking and approval dashboard for project spending. It provides key metrics on total expenditure, pending liability, urgent requests, and request volume — alongside spending trends, expense lifecycle status, top projects by spending, and priority breakdown.
+  - Total Expenditure
+  - Pending Liability
+  - Urgent Requests Count
+  - Total Volume
+  - Spending Trends Chart
+  - Top Projects by Spending
+
+          `,
+        images: [
+          projectAssets.expense_management.dashboard1,
+          projectAssets.expense_management.dashboard2,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Projects Management",
+        description:
+          `
+ A clean project tracking interface for managing and monitoring all active construction projects. It includes a searchable project table with key details like location, type, status, managed by, timeline, and progress. The detailed view shows project information, overall progress, timeline, and site location for each selected project.
+- Search by Project Name
+- Project Table (Project, Location, Type, Status, Managed By, Timeline, Progress, Action)
+- Progress Percentage per Project
+- Timeline (Start Date & End Date)
+- Site Location
+-Overall Progress Percentage
+
+          `,
+        images: [
+          projectAssets.expense_management.projects1,
+          projectAssets.expense_management.projects2,
+        ],
+        fit: "contain",
+      },
+
+
+      {
+        feature: "Expenses",
+        description:
+          `
+A clean expense review and approval interface for construction projects. It displays total expenses, filtered results, and offers quick status filters (All, Pending, Approved, Paid, Completed, Rejected). Each request shows project details, line items with quantities and prices, approval totals, and rejected counts.
+
+- Total Expenses Overview
+- Status Filters
+- Itemized Description
+- Approved Total & Rejected Count
+- Filter Options, Save & Cancel Buttons
+- Declined Items Indicator
+
+          `,
+        images: [
+          projectAssets.expense_management.projects1,
+          projectAssets.expense_management.projects2,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Accountant Dashboard",
+        description:
+          `
+A financial dashboard for monitoring cash flow, payment status, and expense distribution across all projects. It includes advanced filters for project, status, priority, date range, supervisor, and administrator — along with key metrics and spending trends.
+
+- Advanced Filters
+- Total Expenditure
+- Pending Liability
+- Urgent Requests (High Priority Items)
+- Total Volume (Expense Requests Processed)
+- Spending Trends Chart with 30 Days View
+
+          `,
+        images: [
+          projectAssets.expense_management.AccountantDashboard1,
+          projectAssets.expense_management.AccountantDashboard2,
+        ],
+        fit: "contain",
+      },
+
+
+    ] satisfies ProjectSection[],
+  },
+
+  {
+    id: "procument_management",
+    title: "Procument Management System",
+    category: "Enterprise Solutions",
+    image: projectAssets.procument_management.image,
+    cardImage: projectAssets.procument_management.cardImage,
+    galleryImage: projectAssets.procument_management.galleryImage,
+    description: "Our Procurement Management System handles the entire purchasing lifecycle — from procurement requests and purchase orders to goods received notes and site transactions. It also tracks inventory ledgers, product history, sales, finance statistics, and even rent pools. With a central dashboard overview, you get complete visibility into every order, stock movement, and cost from start to finish.",
+    tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
+    link: "https://example.com",
+    sections: [
+      {
+        feature: "Dashboard Overview",
+        description:
+          `
+        A real-time business insights dashboard showing key financial metrics including total revenue, transactions, average, profit, stock value, net income, total cost, profit margin, and inventory count. It also includes purchase request alerts, unfulfilled site tracking, sales trends, latest invoices, top and lowest selling products, payment status, and accounts receivable.
+
+        - Total Revenue, Transactions, Average
+        - Purchase Request Due Alerts
+- Sales Trend Chart (Revenue & Profit Analysis)
+- Top Selling Products (Product, Quantity, Revenue)
+- Lowest Selling Products (Product, Quantity, Revenue)
+- Payment Status Breakdown (Paid vs Pending)
+- Accounts Receivable 
+
+
+          `,
+        images: [
+          projectAssets.procument_management.dashboard1,
+          projectAssets.procument_management.dashboard2,
+          projectAssets.procument_management.dashboard3,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Pending Stock Releases",
+        description:
+          `
+  A clean interface for managing draft invoices that are awaiting storekeeper physical handover.
+- Search Functionality
+- Pending Invoices Table
+- Progress Tracking
+- Refresh Button
+- Release Items Button
+
+          `,
+        images: [
+          projectAssets.procument_management.PendingStockReleases,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Petty Cash Management",
+        description:
+          `
+ This is a Petty Cash Management interface for administrators. Instead of tracking attendance or subcontractors, this screen allows users to submit, track, and reimburse small expense requests. It includes a request form, a list of existing requests with statuses, and a separate reimbursement summary section.
+      - Petty Cash Request List (Records Tab)
+      -  Reimbursements Tab
+      -  New Petty Cash Request Form
+
+          `,
+        images: [
+          projectAssets.procument_management.petty_cash1,
+          projectAssets.procument_management.petty_cash2,
+          projectAssets.procument_management.petty_cash3,
+        ],
+        fit: "contain",
+      },
+
+
+      {
+        feature: "Stock Releases",
+        description:
+          `
+  A clean interface for viewing all invoices with storekeeper releases, grouped by invoice.
+
+- Search Functionality
+- Grouped Invoice View
+- Invoice & PR Reference
+- Site Location
+- Progress Percentage
+- Quantity Tracking
+- Release Count
+- View Invoice Action
+
+          `,
+        images: [
+          projectAssets.procument_management.StockReleases,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Procurement Requests",
+        description:
+          `
+   A clean purchase request management interface for submitting requests and merging them into supplier PO drafts. It includes a sortable requests list with status filters, company filters, and search by PR number. The detailed view shows request summary, itemized product list with stock availability, and options to create a purchase order.
+
+        - Requests List 
+- Status & Company Filters
+- Request Details View (Company, Site, Requested By, Created Date)
+- Items Table
+- Status Badge (APPROVED)
+- Action Options (Quotation, Release from Stock)
+- Create Purchase Order Button
+
+
+          `,
+        images: [
+          projectAssets.procument_management.procument_request1,
+          projectAssets.procument_management.procument_request2,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Create Purchase Requests",
+        description:
+          `
+   A clean interface for submitting new purchase requests. It allows users to add main items, consumable items, or rent items from product lists, then fill in submission details like company, site name, material plan ID, stage ID, stage item ID, and stage name before submitting.
+
+- Add Main Item, Add Consumable & Add Rent Item Options
+- Product Selection from Predefined Lists
+- Submission Details (Company, Site ID, Site Name, Material Plan ID, Stage ID, Stage Item ID, Stage Name)
+- Optional Fields for Flexibility
+- Example Placeholders (e.g., North Site, Foundation)
+- Notes Section with Additional Product List
+
+
+          `,
+        images: [
+          projectAssets.procument_management.CreateRequest1,
+          projectAssets.procument_management.CreateRequest2,
+          projectAssets.procument_management.CreateRequest3,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Purchase Orders",
+        description:
+          `
+   A clean purchase order management interface for viewing, searching, and creating POs. It includes a sortable PO list with supplier, site, date, status, and actions. The create PO form allows users to select company and supplier, add yard or direct order items, set delivery date, add notes, and provide a shipping address.
+
+- Search by PO Number, Supplier or Notes
+- PO Table (PO Number, Supplier, Site, PO Date, Expected Delivery, Status, Created By, Actions)
+- Create Purchase Order Form
+
+
+
+          `,
+        images: [
+          projectAssets.procument_management.PurchaseOrders1,
+          projectAssets.procument_management.PurchaseOrders2,
+          projectAssets.procument_management.PurchaseOrders3,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Purchase Order Preview",
+        description:
+          `
+   A clean PO preview interface for reviewing and downloading purchase orders as PDF. It includes paper size selection, company details, supplier information, shipping address, PO number, date, expected delivery, status, product table with quantities, and total quantity summary.
+
+- Paper Size Selection (A4 Default)
+- Company Details (Name, Address, Phone, Email)
+- Supplier Information (Name, Phone)
+- Shipping Address (Ship To)
+- PO Number, Date, Expected Delivery & Status (DRAFT)
+- Product List Table (Product Name, Quantity)
+- Total Quantity Summary
+- Download Purchase Order PDF Option
+
+          `,
+        images: [
+          projectAssets.procument_management.PurchaseOrderPreview
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Site Transactions",
+        description:
+          `
+   A unified view of purchase requests, purchase orders, GRNs, invoices, and stock-issue activity per site. It includes filters for site, company, supplier, and date range — with a product rollup table showing requested, ordered, received, released, invoiced, and returned quantities. Summary cards display total POs, PRs, GRN invoiced value, and sales invoiced value, followed by a detailed transaction list.
+- Filters (Site, Company, Supplier, Date Range)
+- Product Rollup Table (Product Name, Req, Ord, Recv, Rel, Inv, Ret)
+- Summary Cards (Total Purchase Orders, Purchase Requests, GRN Invoiced, Invoiced Sales)
+- Transactions List (PR #, Site, Company, Status)
+- Status Badge (Approved)
+
+          `,
+        images: [
+          projectAssets.procument_management.SiteTransactions,
+        ],
+        fit: "contain",
+      },
+
+
+      {
+        feature: "Goods Received Notes",
+        description:
+          `
+   A clean GRN management interface for tracking all incoming goods and shipments. It includes a searchable GRN list with supplier, invoice number, total quantity, total amount, site, company, status, and date. The detailed view shows GRN summary, total units received, total value, unit cost, selling price, MRP, location, and action buttons for editing, approving, or rejecting.
+- Search GRNs & Filter by Supplier, Branch, Site
+- GRN Table 
+- Pagination (Previous, Next)
+- GRN Details View (GRN Number, Supplier, Received By, Created At)
+- Total Units Received, Total Value, Unit Cost, Selling Price, MRP
+- Location (Main Warehouse)
+- Action Buttons (Edit, Approve, Reject)
+
+
+          `,
+        images: [
+          projectAssets.procument_management.GoodsReceivedNotes1,
+          projectAssets.procument_management.GoodsReceivedNotes2,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Sales History",
+        description:
+          `
+   A clean sales tracking interface for viewing and analyzing all sales transactions. It includes key metrics like total sales, total revenue, gross profit, margin, and average sale per transaction. The sales trend chart shows revenue and profit over time, while the payment status distribution displays paid vs pending percentages. A filterable and searchable sales records table provides detailed transaction information.
+ - Total Sales Count & Total Revenue
+- Gross Profit & Profit Margin
+- Average Sale Per Transaction
+- Sales Trend Chart (Last 7 Days)
+- Payment Status Distribution (Paid vs Pending Pie Chart)
+- Search & Filter Options (Status, Limit, Date Range)
+- Sales Records Table
+
+          `,
+        images: [
+          projectAssets.procument_management.GoodsReceivedNotes1,
+          projectAssets.procument_management.GoodsReceivedNotes2,
+        ],
+        fit: "contain",
+      },
+
+
+      {
+        feature: "Products",
+        description:
+          `
+   A clean product inventory management interface for viewing and managing all products. It includes key metrics like total products, total stock, low stock items, and expiring soon. The product list is searchable by name, code, brand, or category — with columns for barcode, name, brand, category, cost price, stock, status, and actions.
+
+- Total Products, Total Stock, Low Stock Items & Expiring Soon Counts
+- Search by Name, Code, Brand or Category
+- Product List Table (Bar Code, Name, Brand, Category, Cost Price, Stock, Status, Actions)
+- Status Badge (Normal)
+- Action Buttons (Edit, Delete, Add)
+
+          `,
+        images: [
+          projectAssets.procument_management.products,
+        ],
+        fit: "contain",
+      },
+
+
+      {
+        feature: "Inventory Ledger",
+        description:
+          `
+  A clean inventory tracking interface for monitoring all stock movements and transactions. It includes key metrics like total transactions, net stock change, stock in transactions, and stock out transactions. The transaction list is searchable by product name, code, batch, or location — with columns for product, reference type, batch number, quantity, cost price, selling price, MRP, and transaction type.
+
+- Total Transactions, Net Stock Change, Stock In & Stock Out Counts
+- Search by Product Name, Code, Batch or Location
+- Transaction List Table (Product, Reference Type, Batch Number, Quantity, Unit Cost, Selling Price, MRP, Transaction Type)
+- Transaction Type Badges (Stock In, Stock Out)
+- Reference Types (Site Return, Stock Issue, Hold)
+
+          `,
+        images: [
+          projectAssets.procument_management.InventoryLedger,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Transactions",
+        description:
+          `
+  A clean payment transaction management interface for viewing all payment records. It includes key metrics like total transactions, total amount, sales payments, and inventory payments. Tabs allow switching between all transactions, sales payments, inventory payments, and POS statistics. A searchable transaction table shows date, type, method, reference, amount, and notes.
+
+- Total Transactions Count
+- Total Amount, Sales Payments & Inventory Payments
+- Tab Views (All Transactions, Sales Payments, Inventory Payments, POS Statistics)
+- Search Payments
+- Transaction Table (Date, Type, Method, Reference, Amount, Note)
+- Transaction Types (Sale, Payment)
+- Payment Methods (MIXED, CASH)
+          `,
+        images: [
+          projectAssets.procument_management.transactions,
+        ],
+        fit: "contain",
+      },
+
+
+      {
+        feature: "Finance Statistics",
+        description:
+          `
+  A clean financial overview dashboard focused on a specific counter. It includes time period filters (Today, Weekly, Monthly), key metrics like total income, total expenses, net balance, and cash in hand. A payment summary shows opening balance, income, expenses, and refunds. Recent transactions table displays records, reference, date, type, description, amount, and method.
+
+- Time Period Filters (Today, Weekly, Monthly)
+- Total Income, Total Expenses & Net Balance
+- Cash In Hand
+- Payment Summary (Opening Balance, Income, Expenses, Refunds)
+- Recent Transactions Table (Records, Reference, Date, Type, Description, Amount, Method)
+- Action Options (Export Excel, Cash In/Out, Refresh)
+
+          `,
+        images: [
+          projectAssets.procument_management.financeStatistics,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Rent Pool",
+        description:
+          `
+  A centralized equipment tracking interface for monitoring construction equipment inventory and active site allocations. It includes four main tabs: Available, Allocated, History, and Sites.
+
+- Tabs (Available, Allocated, History, Sites)
+- Available Rent Items Table (Product, Product Code, Daily Price, Total Available Quantity, Update Action)
+- Search Equipment & Export Options (PDF, Excel)
+- Active Site Allocations Table (Alloc. ID, Site, Product, Quantity, Allocated Date, Days, Return Action)
+- History Section with Filters (Site, Product, Time Period)
+- Systemized Report (Status, Product, Site, Quantity, Price/Day, Days, Total Cost)
+- Construction Sites List (Site Name, ID, Address, View Details Button)
+
+          `,
+        images: [
+          projectAssets.procument_management.RentPool1,
+          projectAssets.procument_management.RentPool2,
+          projectAssets.procument_management.RentPool3,
+          projectAssets.procument_management.RentPool4,
+        ],
+        fit: "contain",
+      },
+
+    ] satisfies ProjectSection[],
+  },
+
+  {
+    id: "distribution_management",
+    title: "Distribution Management System",
+    category: "POS System",
+    image: projectAssets.distribution_management.image,
+    cardImage: projectAssets.distribution_management.cardImage,
+    galleryImage: projectAssets.distribution_management.galleryImage,
+    description: "Our Distribution Management System simplifies the entire distribution process — from ref registration and purchase orders to sales invoices. The overview dashboard gives you a real-time snapshot of all transactions, helping you track sales, manage orders, and keep your distribution network running smoothly.",
+    tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
+    link: "https://example.com",
+    sections: [
+
+      {
+        feature: "Overview Dashboard",
+        description:
+          `
+A clean admin dashboard showing key business metrics and pending actions. It includes revenue analytics with total revenue, pending invoices, active servers, and total clients. The sidebar provides navigation for distribution, user management, product catalog, and inventory. A pending actions section lists alerts like server payment due, new client registration, server down alert, and invoice overdue.
+- Total Revenue, Pending Invoices, Active Servers & Total Clients
+- Revenue Analytics Chart (Monthly Server & Invoice Revenue)
+- View Report Button
+- Sidebar Navigation (Distribution, Routes, Sales Invoices, User Management, Product Catalog, Inventory)
+- Pending Actions List (Server Payment Due, New Client Registration, Server Down Alert, Invoice Overdue)
+
+          `,
+        images: [
+          projectAssets.distribution_management.dashboard,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Ref Registration",
+        description:
+          `
+A clean referral contact management interface for registering and managing referral contacts. It includes a simple form with required name field and optional mobile, email, address, and notes. The referral list shows total refs count, searchable table with name, mobile, email, address, and actions, plus an add new ref button.
+- Total Refs Count
+- Add New Ref Form
+- Search by Name, Mobile or Email
+- Refs Table
+
+          `,
+        images: [
+          projectAssets.distribution_management.RefRegistration1,
+          projectAssets.distribution_management.RefRegistration2,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Sales Invoices",
+        description:
+          `
+A clean sales invoice management interface for tracking client payments and creating new invoices. The invoice list includes total count and payment breakdown by Cash, Bank, and Cheque — with a searchable table showing date, invoice number, client, hub, payment method, and status. The new invoice form allows users to select provisioning hub, client, and referral agent before proceeding.
+
+- Total Invoice Count & Payment Breakdown
+- Search by Invoice, Client or Hub
+- Invoice Table
+- New Sales Invoice Form
+
+          `,
+        images: [
+          projectAssets.distribution_management.SalesInvoices1,
+          projectAssets.distribution_management.SalesInvoices2,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Sales Invoices",
+        description:
+          `
+A clean sales invoice management interface for tracking client payments and creating new invoices. The invoice list includes total count and payment breakdown by Cash, Bank, and Cheque — with a searchable table showing date, invoice number, client, hub, payment method, and status. The new invoice form allows users to select provisioning hub, client, and referral agent before proceeding.
+
+- Invoice Overview 
+- Search & Filter
+- Invoice Table
+- New Invoice Creation
+- Provisioning Hub
+- Referral Agent
+- Form Actions
+
+          `,
+        images: [
+          projectAssets.distribution_management.SalesInvoices1,
+          projectAssets.distribution_management.SalesInvoices2,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Purchase Orders",
+        description:
+          `
+A complete purchase order management system for tracking and creating supplier orders.
+
+- PO Overview 
+- Purchase Orders Table
+- Order Statuses
+- Create Purchase Order Form
+- Warehouse Selection
+- Supplier Selection
+- Order Date
+- Form Actions
+          `,
+        images: [
+          projectAssets.distribution_management.PurchaseOrders1,
+          projectAssets.distribution_management.PurchaseOrders2,
+          projectAssets.distribution_management.PurchaseOrders3,
+        ],
+        fit: "contain",
+      },
 
 
     ] satisfies ProjectSection[],

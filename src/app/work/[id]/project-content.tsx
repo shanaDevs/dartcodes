@@ -216,7 +216,7 @@ export default function ProjectContent({ project }: ProjectContentProps) {
                                       alt={`${section.feature} screenshot ${slideIndex + 1} of ${mediaUrls.length}`}
                                       fill
                                       sizes="(max-width: 1024px) 100vw, 50vw"
-                                      className={`transition-transform duration-500 ease-out will-change-transform ${section.fit === "contain" ? "object-contain p-4 md:p-6 scale-100 group-hover:scale-105" : "object-cover scale-100 group-hover:scale-105"}`}
+                                      className={`transition-transform duration-500 ease-out will-change-transform ${section.fit === "contain" ? "object-contain object-center p-2 md:p-3 scale-100 group-hover:scale-[1.02]" : "object-cover object-center scale-100 group-hover:scale-105"}`}
                                     />
                                     <div className="pointer-events-none absolute inset-0 bg-linear-to-tr from-background/35 via-transparent to-transparent" />
                                   </div>
@@ -239,7 +239,7 @@ export default function ProjectContent({ project }: ProjectContentProps) {
                               alt={`${section.feature} image`}
                               fill
                               sizes="(max-width: 1024px) 100vw, 50vw"
-                              className={`transition-transform duration-500 ease-out will-change-transform ${section.fit === "contain" ? "object-contain p-4 md:p-6 scale-100 group-hover:scale-110" : "object-cover scale-100 group-hover:scale-110"}`}
+                              className={`transition-transform duration-500 ease-out will-change-transform ${section.fit === "contain" ? "object-contain object-center p-2 md:p-3 scale-100 group-hover:scale-[1.02]" : "object-cover object-center scale-100 group-hover:scale-110"}`}
                             />
                             <div className="pointer-events-none absolute inset-0 bg-linear-to-tr from-background/35 via-transparent to-transparent" />
                           </>
