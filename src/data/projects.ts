@@ -147,6 +147,8 @@ const projectAssets = {
     cardImage: "/images/projects/primus_distributor/primus_distributor_new.png",
     primus_distributor_dash1: "/images/projects/primus_distributor/primus_distributor_dash1.png",
     primus_distributor_dash2: "/images/projects/primus_distributor/primus_distributor_dash2.png",
+    primus_distributor_dash3: "/images/projects/primus_distributor/primus_distributor_dash3.png",
+    primus_distributor_dash4: "/images/projects/primus_distributor/primus_distributor_dash4.png",
     POS_Interface1: "/images/projects/primus_distributor/POS_Interface1.png",
     POS_Interface2: "/images/projects/primus_distributor/POS_Interface2.png",
     GRN1: "/images/projects/primus_distributor/GRN1.png",
@@ -1321,6 +1323,8 @@ Inventory Categorization by Size
         images: [
           projectAssets.primus_distributor.primus_distributor_dash1,
           projectAssets.primus_distributor.primus_distributor_dash2,
+          projectAssets.primus_distributor.primus_distributor_dash3,
+          projectAssets.primus_distributor.primus_distributor_dash4,
         ],
         fit: "contain",
       },
@@ -2279,7 +2283,7 @@ Order finalization and invoicing interface for a salesperson, covering payment s
     image: projectAssets.garage_management.image,
     cardImage: projectAssets.garage_management.cardImage,
     galleryImage: projectAssets.garage_management.galleryImage,
-    description: "",
+    description: "Our Garage Management System keeps every workshop operation running smoothly — from job management and customer payments to stock control, goods received notes, and invoicing for retail and final jobs. It also tracks petty cash, collection summaries, and daily, monthly, and profit analysis, giving you a complete view of your garage's performance and finances.",
     tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
     link: "https://example.com",
     sections: [

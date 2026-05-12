@@ -126,7 +126,7 @@ export default function WorkContent() {
                     <div className="absolute inset-0 z-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40 backdrop-blur-[2px]">
                       <Link href={`/work/${project.id}`}>
                         <Button className="rounded-full bg-white text-black font-bold h-12 px-6 hover:bg-gold hover:scale-105">
-                          View Case Study
+                          View Project
                         </Button>
                       </Link>
                     </div>
