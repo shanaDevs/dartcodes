@@ -62,7 +62,7 @@ export function Footer() {
             {/* BRAND */}
             <div className="lg:col-span-5 xl:col-span-4">
               <div className="mb-4">
-                <Logo />
+                <Logo assetFormat="png" />
               </div>
               <p className="text-foreground/60 text-sm leading-relaxed max-w-sm mb-6">
                 Engineering high-performance digital products designed to

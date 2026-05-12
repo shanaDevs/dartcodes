@@ -42,7 +42,7 @@ export default function CaseStudiesContent() {
 
       <main className="pt-24 pb-16">
         {/* --- Hero Section --- */}
-        <section className="relative py-20 px-6 overflow-hidden">
+        <section className="relative py-12 md:py-20 px-6 overflow-hidden">
           <div className="absolute inset-0 z-0">
             {/* Soft gradient background instead of a specific image to match the premium tone */}
             <div
@@ -164,7 +164,7 @@ export default function CaseStudiesContent() {
                       alt={featuredCaseStudy.title}
                       width={600}
                       height={400}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain md:object-cover"
                     />
                   </div>
                 </div>

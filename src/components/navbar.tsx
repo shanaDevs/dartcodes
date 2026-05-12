@@ -39,12 +39,14 @@ export function Navbar() {
       <motion.header
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b backdrop-blur-xl bg-white/60 dark:bg-background/70",
-          isScrolled ? "border-border/60 py-4 shadow-lg" : "border-transparent py-2",
+          isScrolled
+            ? "border-border/60 py-4 shadow-lg"
+            : "border-transparent py-2",
         )}
       >
         <div className="w-full max-w-[1920px] mx-auto px-6 md:px-12 flex items-center justify-between relative">
           <Link href="/" className="relative z-50">
-            <Logo />
+            <Logo assetFormat="png" />
           </Link>
 
           {/* Desktop Nav */}
@@ -58,7 +60,10 @@ export function Navbar() {
                       <span className="absolute bottom-0 left-0 w-full h-px bg-gold origin-right scale-x-0 transition-transform duration-300 group-hover:origin-left group-hover:scale-x-100" />
                     </span>
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent align="start" className="min-w-[420px] max-w-[480px] p-0">
+                  <DropdownMenuContent
+                    align="start"
+                    className="min-w-[420px] max-w-[480px] p-0"
+                  >
                     <div className="px-4 pt-4 pb-2">
                       <span className="text-sm font-semibold text-foreground">
                         Our services
@@ -166,9 +171,7 @@ export function Navbar() {
                     <button
                       type="button"
                       className="w-full text-4xl font-bold text-foreground hover:text-gold transition-colors flex items-center justify-center gap-2"
-                      onClick={() =>
-                        setIsMobileServicesOpen((prev) => !prev)
-                      }
+                      onClick={() => setIsMobileServicesOpen((prev) => !prev)}
                     >
                       <span>{link.name}</span>
                       <span

@@ -186,7 +186,7 @@ const projectAssets = {
     attendance: "/images/projects/employee_app/attendance.jpeg",
     daliyTask: "/images/projects/employee_app/daliyTask.jpeg",
     labor_attendance: "/images/projects/employee_app/labor_attendance.jpeg",
-    subcontractors: "/images/projects/employee_app/subcontractors.jpeg",
+    subcontractors: "/images/projects/employee_app/Subcontractors.jpeg",
     perchaseRequest: "/images/projects/employee_app/purchase_request.jpeg",
   },
 
@@ -250,6 +250,45 @@ const projectAssets = {
     PurchaseOrders1: "/images/projects/distribution_management/PurchaseOrders1.png",
     PurchaseOrders2: "/images/projects/distribution_management/PurchaseOrders2.png",
     PurchaseOrders3: "/images/projects/distribution_management/PurchaseOrders3.png",
+    refAppHome1: "/images/projects/distribution_management/refAppHome1.jpeg",
+    refAppCustomer1: "/images/projects/distribution_management/refAppCustomer1.jpeg",
+    refOrder1: "/images/projects/distribution_management/refOrder1.jpeg",
+    refOrder2: "/images/projects/distribution_management/refOrder2.jpeg",
+  },
+
+  garage_management: {
+    image: "/images/projects/garage_management/garage_management.png",
+    galleryImage: "/images/projects/garage_management/garage_management.png",
+    cardImage: "/images/projects/garage_management/garage_management.png",
+    dashboard1: "/images/projects/garage_management/dashboard1.png",
+    dashboard2: "/images/projects/garage_management/dashboard2.png",
+    dashboard3: "/images/projects/garage_management/dashboard3.png",
+    jobs1: "/images/projects/garage_management/jobs1.png",
+    jobs2: "/images/projects/garage_management/jobs2.png",
+    jobs3: "/images/projects/garage_management/jobs3.png",
+    customer_payment1: "/images/projects/garage_management/customer_payment1.png",
+    customer_payment2: "/images/projects/garage_management/customer_payment2.png",
+    goods_received1: "/images/projects/garage_management/goods_received1.png",
+    goods_received2: "/images/projects/garage_management/goods_received2.png",
+    goods_received3: "/images/projects/garage_management/goods_received3.png",
+    retail_invoices1: "/images/projects/garage_management/retail_invoices01.png",
+    retail_invoices2: "/images/projects/garage_management/retail_invoices02.png",
+    retail_invoices3: "/images/projects/garage_management/retail_invoices03.png",
+    retail_invoices4: "/images/projects/garage_management/retail_invoices04.png",
+    final_invoices1: "/images/projects/garage_management/final_invoices1.png",
+    final_invoices2: "/images/projects/garage_management/final_invoices2.png",
+    petty_cash1: "/images/projects/garage_management/petty_cash1.png",
+    petty_cash2: "/images/projects/garage_management/petty_cash2.png",
+    petty_cash3: "/images/projects/garage_management/petty_cash3.png",
+    sales_analysis_daly1: "/images/projects/garage_management/sales_analysis_daily1.png",
+    sales_analysis_daly2: "/images/projects/garage_management/sales_analysis_daily2.png",
+    sales_analysis_daly3: "/images/projects/garage_management/sales_analysis_daily3.png",
+    sales_analysis_monthly1: "/images/projects/garage_management/sales_analysis_monthly1.png",
+    sales_analysis_monthly2: "/images/projects/garage_management/sales_analysis_monthly2.png",
+    stock1: "/images/projects/garage_management/stock1.png",
+    stock2: "/images/projects/garage_management/stock2.png",
+    stock3: "/images/projects/garage_management/stock3.png",
+    collection_summary: "/images/projects/garage_management/collection_summary.png",
   },
 
 } as const;
@@ -1610,12 +1649,12 @@ Inventory Categorization by Size
 
   {
     id: "expense_management",
-    title: "Expense Management System",
+    title: "Financial Management System",
     category: "Enterprise Solutions",
     image: projectAssets.expense_management.image,
     cardImage: projectAssets.expense_management.cardImage,
     galleryImage: projectAssets.expense_management.galleryImage,
-    description: "Our Expenses Management System keeps every project cost under control — from an admin dashboard and project-wise expense tracking to a dedicated accountant dashboard. It gives you a clear view of where money is going, helps prevent budget overruns, and makes financial oversight simple and transparent.",
+    description: "Our Financial Management System keeps every project cost under control — from an admin dashboard and project-wise expense tracking to a dedicated accountant dashboard. It gives you a clear view of where money is going, helps prevent budget overruns, and makes financial oversight simple and transparent.",
     tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
     link: "https://example.com",
     sections: [
@@ -2171,6 +2210,311 @@ A complete purchase order management system for tracking and creating supplier o
         fit: "contain",
       },
 
+      {
+        feature: "Ref Application Home",
+        description:
+          `
+This is a Sales Workspace Dashboard for a salesperson. Instead of tracking attendance or site tasks, this screen provides a financial and customer overview at a glance. It shows order volume, total sales, settled amounts, collection rate, outstanding balance, top/bottom customers, and dues — all with zero-state placeholders when no data exists yet.
+-  Key Metrics Cards
+- Customer Search & Listing
+- Recent Orders
+- Bottom Navigation Bar
+
+          `,
+        images: [
+          projectAssets.distribution_management.refAppHome1,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Ref Application Customer",
+        description:
+          `
+This is a sales customers interface for a salesperson. It displays customer directory,search functionality,linked customers,top spending customers,and purchase leaders.On the second screen,it shows a detailed order history for a specific customer (samadi),including order date, total amount, items, and unit pricing.
+
+- All Customers browse
+- Search customers
+- Top spend customer highlight
+- Purchase leaders ranking
+- Order history view per customer
+- Order total amount
+          `,
+        images: [
+          projectAssets.distribution_management.refAppCustomer1,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Ref Application Order",
+        description:
+          `
+Order finalization and invoicing interface for a salesperson, covering payment selection, order submission, outstanding balances, order timeline, and finalized invoice with billing, products, and settlement status.
+- Payment method selection
+- Submit order for approval
+- Cart total display
+- Outstanding balance view
+- Orders timeline (with status and amount)
+- Sales invoice generation
+- Itemized product details
+- Grand total
+-Account settlement status (fully settled / outstanding)
+
+          `,
+        images: [
+          projectAssets.distribution_management.refOrder1,
+          projectAssets.distribution_management.refOrder2,
+        ],
+        fit: "contain",
+      },
+
+    ] satisfies ProjectSection[],
+  },
+
+  {
+    id: "garage_management",
+    title: "Vehicle Management System",
+    category: "POS System",
+    image: projectAssets.garage_management.image,
+    cardImage: projectAssets.garage_management.cardImage,
+    galleryImage: projectAssets.garage_management.galleryImage,
+    description: "",
+    tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
+    link: "https://example.com",
+    sections: [
+
+      {
+        feature: "Overview Dashboard",
+        description:
+          `
+Vehicle management dashboard showing key business metrics, outstanding balances, quick actions, revenue breakdown by method, job status overview, low stock alerts, and a revenue trend chart.
+
+- Total revenue, expenses, and profits
+- Outstanding distribution (job & retail)
+- Quick actions (New Job Card, Add Customer, Customer Payment)
+- Revenue breakdown by method (Cash, Online)
+- Jobs status overview
+- Low stock alerts
+- Revenue trend chart (with date range filter)
+
+Customer outstanding table
+          `,
+        images: [
+          projectAssets.garage_management.dashboard1,
+          projectAssets.garage_management.dashboard2,
+          projectAssets.garage_management.dashboard3,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Job management",
+        description:
+          `
+Job management interface for a garage, displaying job cards (active/completed), job details (customer, complaint, priority), vehicle info, assigned mechanics, services, spare parts, outsourced services, advance payments, and finalize & invoice option.
+- Job cards list with customer, complaint, priority, and date
+- Vehicle details (registration, customer ID)
+- Assigned employee / mechanic
+- Estimated total due
+- Finalize & invoice
+
+
+
+          `,
+        images: [
+          projectAssets.garage_management.jobs1,
+          projectAssets.garage_management.jobs2,
+          projectAssets.garage_management.jobs3,
+        ],
+        fit: "contain",
+      },
+
+
+      {
+        feature: "Customer Payments",
+        description:
+          `
+Customer payments management interface that lists all payment transactions with filters, showing payment details like date, customer, vehicle, type (advance/retail/final), amount, method, and reference number.
+- Payment search and filtering (date range, invoice type)
+- Quick date filters (Today, 3 Days, 7 Days, 30 Days)
+- Payment list with date, payment number, invoice/job number
+- Customer and vehicle number
+- Payment type (Advance, Retail, Final)
+- Amount and payment method (Cash, Bank Transfer)
+- Cheque/reference number
+
+
+
+          `,
+        images: [
+          projectAssets.garage_management.customer_payment1,
+          projectAssets.garage_management.customer_payment2,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "stock management",
+        description:
+          `
+This is a stock management interface for a garage/service center. Users can view all stock items in a table, search/filter items, edit existing item details (as shown in the edit modal), view transaction history (GRN details with cost/price/quantity), and add new items.
+- View stock items with part number, category, description, and total stock amount
+- Search and filter stocks
+- Edit stock item details (part no, category, description, unit type, min stock level)
+- View GRN (Goods Received Note) history with cost, selling price, quantity, supplier, and location
+- Add new stock items
+- Dark/light theme toggle
+
+
+
+          `,
+        images: [
+          projectAssets.garage_management.stock1,
+          projectAssets.garage_management.stock2,
+          projectAssets.garage_management.stock3,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Goods Received Notes",
+        description:
+          `
+This is a Goods Received Notes (GRN) management interface for tracking supplier deliveries, stock intake, and payment statuses. Users can create new GRNs, view all GRN records with filtering, and see detailed GRN information including line items and payment history.
+- Create GRN (invoice, supplier, date, total, payment method, line items)
+- View GRN table (number, date, supplier, total, paid, status)
+- Search and filter GRNs
+- View GRN details 
+- Manage supplier payments
+
+
+
+          `,
+        images: [
+          projectAssets.garage_management.goods_received1,
+          projectAssets.garage_management.goods_received2,
+          projectAssets.garage_management.goods_received3,
+        ],
+        fit: "contain",
+      },
+
+
+      {
+        feature: "Retail Invoices",
+        description:
+          `
+This is a retail invoice management interface for creating and tracking customer sales. Users can create new invoices, add items to cart, manage customer details, process payments, and view all invoice history with status tracking.
+- Create new retail invoice
+- View all invoices table
+- Search & filter invoices by customer or status
+- View invoice details
+- Edit quantities on existing invoices
+
+          `,
+        images: [
+          projectAssets.garage_management.retail_invoices1,
+          projectAssets.garage_management.retail_invoices2,
+          projectAssets.garage_management.retail_invoices3,
+          projectAssets.garage_management.retail_invoices4,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Final Invoices",
+        description:
+          `
+This is a final invoice management interface for service/job-based billing (including labour charges). Users can track invoices linked to vehicles and job numbers, view payment statuses, and manage outstanding balances.
+- View final invoices table
+- Search & filter invoices by invoice number or date range
+- View invoice details
+- Add payment to partially paid invoices
+- View/download invoices
+
+          `,
+        images: [
+          projectAssets.garage_management.final_invoices1,
+          projectAssets.garage_management.final_invoices2,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Petty Cash Management",
+        description:
+          `
+This is a petty cash management interface for tracking small deposits and expenses. Users can view summary totals, record deposits/expenses, and monitor closing balance.
+- View summary (total deposits, total expenses, closing balance)
+- Add deposit or expense with narration
+- View transaction table (reference no, type, amount, narration)
+- Filter by date range
+- Export to PDF
+
+          `,
+        images: [
+          projectAssets.garage_management.petty_cash1,
+          projectAssets.garage_management.petty_cash2,
+          projectAssets.garage_management.petty_cash3,
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Collection Summary",
+        description:
+          `
+This is a collection summary dashboard for tracking payment receipts across cash, cheque, card, and bank transfer methods.
+- Cash control summary (Cash BF, collections, grand total)
+- Filter by date range
+- Payment collections table (payment no, date, invoice/job no, customer, payment method amounts)
+- Export to PDF
+
+          `,
+        images: [
+          projectAssets.garage_management.collection_summary
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Daily & Profit Analysis",
+        description:
+          `
+This is a sales and profit analysis dashboard for tracking revenue, costs, and net profit over time. Users can view daily/monthly breakdowns with visual charts and data tables.
+- View total revenue, total cost, and net profit summary
+- Daily/Monthly breakdown toggle
+- Quick date presets (Today, 3/7/30 Days)
+- Line chart showing revenue, cost, and profit trends
+- Data table with daily revenue, cost, and profit figures
+- Export to PDF
+
+
+          `,
+        images: [
+          projectAssets.garage_management.sales_analysis_daly1,
+          projectAssets.garage_management.sales_analysis_daly2,
+          projectAssets.garage_management.sales_analysis_daly3
+        ],
+        fit: "contain",
+      },
+
+      {
+        feature: "Monthly Profit Analysis",
+        description:
+          `
+This is a monthly profit analysis view showing revenue, cost, and profit trends across months of a selected year.
+- Select year with reset option
+- Line chart comparing revenue, cost, and profit by month
+- Negative profit visualization
+
+          `,
+        images: [
+          projectAssets.garage_management.sales_analysis_monthly1,
+          projectAssets.garage_management.sales_analysis_monthly2,
+        ],
+        fit: "contain",
+      },
 
     ] satisfies ProjectSection[],
   },

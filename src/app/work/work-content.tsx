@@ -110,16 +110,16 @@ export default function WorkContent() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3 }}
-                  className="group relative bg-foreground/[0.03] border border-foreground/10 rounded-2xl overflow-hidden hover:border-gold/30 transition-colors"
+                  className="group relative bg-foreground/3 border border-foreground/10 rounded-2xl overflow-hidden hover:border-gold/30 transition-colors"
                 >
                   {/* Image Container */}
-                  <div className="relative h-64 overflow-hidden">
+                  <div className="relative h-40 md:h-64 overflow-hidden">
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors z-10" />
                     <Image
                       src={project.cardImage ?? project.image}
                       alt={project.title}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="object-contain md:object-cover transition-transform duration-700 group-hover:scale-110"
                     />
 
                     {/* Overlay Button */}

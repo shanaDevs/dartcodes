@@ -3,7 +3,15 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
-export function Logo({ className }: { className?: string }) {
+type LogoAssetFormat = "svg" | "png";
+
+export function Logo({
+  className,
+  assetFormat = "svg",
+}: {
+  className?: string;
+  assetFormat?: LogoAssetFormat;
+}) {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -16,12 +24,22 @@ export function Logo({ className }: { className?: string }) {
   }
 
   const isDark = resolvedTheme === "dark";
-  const iconSrc = isDark
-    ? "/images/logos/icon-logo-white-gold.svg"
-    : "/images/logos/icon-logo-black-gold.svg";
-  const textSrc = isDark
-    ? "/images/logos/dc-text-logo-white-gold.svg"
-    : "/images/logos/dc-text-logo-black-gold.svg";
+  const iconSrc =
+    assetFormat === "png"
+      ? isDark
+        ? "/images/logos/Icon%20Logo%20White%20Gold%20(2).png"
+        : "/images/logos/Icon%20Logo%20Black%20Gold%20(2).png"
+      : isDark
+        ? "/images/logos/icon-logo-white-gold.svg"
+        : "/images/logos/icon-logo-black-gold.svg";
+  const textSrc =
+    assetFormat === "png"
+      ? isDark
+        ? "/images/logos/DC%20Text%20Logo%20White%20Gold%20(2).png"
+        : "/images/logos/DC%20Text%20Logo%20Black%20Gold.png"
+      : isDark
+        ? "/images/logos/dc-text-logo-white-gold.svg"
+        : "/images/logos/dc-text-logo-black-gold.svg";
 
   return (
     <div className={`flex items-center gap-3 ${className}`}>

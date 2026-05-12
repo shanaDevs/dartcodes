@@ -151,7 +151,29 @@ export default function ProjectContent({ project }: ProjectContentProps) {
               Main Features
             </h3>
           </div>
-          <ul className="flex flex-wrap items-center justify-center gap-3">
+          {/* Mobile carousel (touch swipe) */}
+          <div className="md:hidden">
+            <Carousel
+              className="w-full"
+              opts={{ align: "center", loop: false }}
+            >
+              <CarouselContent className="ml-0 flex gap-4 px-4">
+                {contentSections.map((item, idx) => (
+                  <CarouselItem
+                    key={`${project.id}-feature-slide-${idx}`}
+                    className="basis-[80%] max-w-xs mx-auto"
+                  >
+                    <div className="rounded-full border border-gold/60 bg-gold/15 px-4 py-3 text-sm font-medium text-gold text-center">
+                      {item.feature}
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
+          </div>
+
+          {/* Desktop / tablet pills */}
+          <ul className="hidden md:flex flex-wrap items-center justify-center gap-3">
             {contentSections.map((item, itemIndex) => (
               <li
                 key={`${project.id}-feature-badge-${item.feature}-${itemIndex}`}
@@ -194,29 +216,33 @@ export default function ProjectContent({ project }: ProjectContentProps) {
                   className="grid gap-6 lg:gap-8 lg:grid-cols-2 items-center"
                 >
                   {mediaUrls.length > 0 && (
-                    <div
+                    <motion.div
                       className={imageFirst ? "order-1" : "order-1 lg:order-2"}
+                      initial={{ x: imageFirst ? -120 : 120, opacity: 0 }}
+                      whileInView={{ x: 0, opacity: 1 }}
+                      viewport={{ once: true, amount: 0.25 }}
+                      transition={{ duration: 0.6, ease: "easeOut" }}
                     >
-                      <div className="group relative min-h-96 md:min-h-110 rounded-[2rem] overflow-hidden border border-border/70 bg-foreground/2 shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
+                      <div className="group relative min-h-52 md:min-h-96 lg:min-h-110 rounded-[2rem] overflow-hidden border border-border/70 bg-foreground/2 shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
                         {useCarousel ? (
                           <Carousel
-                            className="h-full min-h-96 md:min-h-110"
+                            className="h-full min-h-52 md:min-h-96 lg:min-h-110"
                             opts={{ align: "start", loop: true }}
                             plugins={[Autoplay({ delay: 5000 })]}
                           >
-                            <CarouselContent className="ml-0 h-full min-h-96 md:min-h-110">
+                            <CarouselContent className="ml-0 h-full min-h-52 md:min-h-96 lg:min-h-110">
                               {mediaUrls.map((src, slideIndex) => (
                                 <CarouselItem
                                   key={`${project.id}-${section.feature}-slide-${slideIndex}`}
                                   className="pl-0 basis-full"
                                 >
-                                  <div className="relative min-h-96 md:min-h-110 w-full">
+                                  <div className="relative min-h-52 md:min-h-96 lg:min-h-110 w-full">
                                     <Image
                                       src={src}
                                       alt={`${section.feature} screenshot ${slideIndex + 1} of ${mediaUrls.length}`}
                                       fill
                                       sizes="(max-width: 1024px) 100vw, 50vw"
-                                      className={`transition-transform duration-500 ease-out will-change-transform ${section.fit === "contain" ? "object-contain object-center p-2 md:p-3 scale-100 group-hover:scale-[1.02]" : "object-cover object-center scale-100 group-hover:scale-105"}`}
+                                      className={`transition-transform duration-500 ease-out will-change-transform ${section.fit === "contain" ? "object-contain lg:object-contain object-center p-2 md:p-3 scale-100 group-hover:scale-[1.02]" : "object-contain lg:object-cover object-center p-2 md:p-3 scale-100 group-hover:scale-105"}`}
                                     />
                                     <div className="pointer-events-none absolute inset-0 bg-linear-to-tr from-background/35 via-transparent to-transparent" />
                                   </div>
@@ -239,17 +265,21 @@ export default function ProjectContent({ project }: ProjectContentProps) {
                               alt={`${section.feature} image`}
                               fill
                               sizes="(max-width: 1024px) 100vw, 50vw"
-                              className={`transition-transform duration-500 ease-out will-change-transform ${section.fit === "contain" ? "object-contain object-center p-2 md:p-3 scale-100 group-hover:scale-[1.02]" : "object-cover object-center scale-100 group-hover:scale-110"}`}
+                              className={`transition-transform duration-500 ease-out will-change-transform ${section.fit === "contain" ? "object-contain lg:object-contain object-center p-2 md:p-3 scale-100 group-hover:scale-[1.02]" : "object-contain lg:object-cover object-center p-2 md:p-3 scale-100 group-hover:scale-110"}`}
                             />
                             <div className="pointer-events-none absolute inset-0 bg-linear-to-tr from-background/35 via-transparent to-transparent" />
                           </>
                         )}
                       </div>
-                    </div>
+                    </motion.div>
                   )}
 
-                  <div
+                  <motion.div
                     className={imageFirst ? "order-2" : "order-2 lg:order-1"}
+                    initial={{ x: imageFirst ? 120 : -120, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: true, amount: 0.25 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
                   >
                     <div className="rounded-[2rem] border border-border/70 bg-background/80 backdrop-blur-sm p-6 md:p-8 shadow-[0_20px_60px_rgba(0,0,0,0.06)]">
                       <p className="text-xs uppercase tracking-[0.3em] text-gold mb-3">
@@ -288,7 +318,7 @@ export default function ProjectContent({ project }: ProjectContentProps) {
                         </p>
                       )}
                     </div>
-                  </div>
+                  </motion.div>
                 </motion.div>
               );
             })}
