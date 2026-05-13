@@ -2278,12 +2278,12 @@ Order finalization and invoicing interface for a salesperson, covering payment s
 
   {
     id: "garage_management",
-    title: "Vehicle Management System",
+    title: "Service Management System",
     category: "POS System",
     image: projectAssets.garage_management.image,
     cardImage: projectAssets.garage_management.cardImage,
     galleryImage: projectAssets.garage_management.galleryImage,
-    description: "Our Garage Management System keeps every workshop operation running smoothly — from job management and customer payments to stock control, goods received notes, and invoicing for retail and final jobs. It also tracks petty cash, collection summaries, and daily, monthly, and profit analysis, giving you a complete view of your garage's performance and finances.",
+    description: "Our Service Management System streamlines every workshop operation — from job management and customer payments to stock control, goods received notes, and invoicing for retail and final jobs. It also manages petty cash, collection summaries, and daily, monthly, and profit analysis, providing a complete overview of business performance and financial operations.", 
     tags: ["Next.js", "Node.js", "MySQL", "Tailwind CSS"],
     link: "https://example.com",
     sections: [
