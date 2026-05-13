@@ -2279,7 +2279,7 @@ Order finalization and invoicing interface for a salesperson, covering payment s
   {
     id: "garage_management",
     title: "Service Management System",
-    category: "POS System",
+    category: "Enterprise Solutions",
     image: projectAssets.garage_management.image,
     cardImage: projectAssets.garage_management.cardImage,
     galleryImage: projectAssets.garage_management.galleryImage,
